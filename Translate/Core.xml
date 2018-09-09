@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Lang>
+	<Attribute>
+		<Hp rich="yes">[color=#00FFFFFF]生命值[/color]</Hp>
+		<MoveSpeed rich="yes">[color=#00FFFFFF]航行速度[/color]</MoveSpeed>
+		<Defence rich="yes">[color=#00FFFFFF]装甲防御[/color]</Defence>
+		<ShieldHp rich="yes">[color=#00FFFFFF]护盾生命值[/color]</ShieldHp>
+		<ShieldDefence rich="yes">[color=#00FFFFFF]护盾防御[/color]</ShieldDefence>
+		<Attack rich="yes">[color=#00FFFFFF]攻击[/color]</Attack>
+		<FireRate rich="yes">[color=#00FFFFFF]射速（次/秒)[/color]</FireRate>
+		<CritProb rich="yes">[color=#00FFFFFF]暴击率[/color]</CritProb>
+		<CritAttackAddPercent rich="yes">[color=#00FFFFFF]暴击伤害加成[/color]</CritAttackAddPercent>
+		<FireDistance rich="yes">[color=#00FFFFFF]攻击射程[/color]</FireDistance>
+		<AttackDPC rich="yes">[color=#00FFFFFF]每秒伤害输出[/color]</AttackDPC>
+		<CoolRate rich="yes">[color=#00FFFFFF]开火冷却比[/color]</CoolRate>
+		<DPS rich="yes">[color=#00FFFFFF]每秒伤害输出[/color]</DPS>
+		<FirePointCount rich="yes">[color=#00FFFFFF]炮弹数[/color]</FirePointCount>
+		<DefencePenetration rich="yes">[color=#00FFFFFF]装甲穿透[/color]</DefencePenetration>
+	</Attribute>
+
+	<Char>
+		<WeaponAttackAdd>攻击 +{0}</WeaponAttackAdd>
+		<WeaponAttackAddPerent>攻击 +{0}%</WeaponAttackAddPerent>
+		<WeaponRateAddPerent>射速 +{0}%</WeaponRateAddPerent>
+		<WeaponCooldownReduce>Cooldown -{0}</WeaponCooldownReduce>
+		<WeaponCooldownReducePercent>Cooldown -{0}%</WeaponCooldownReducePercent>
+		<WeaponDurationAdd>Attack Duration + {0}</WeaponDurationAdd>
+		<WeaponDurationAddPercent>Attack Duration + {0}%</WeaponDurationAddPercent>
+		<HpAdd>生命值 +{0}</HpAdd>
+		<HpAddPercent>生命值 +{0}%</HpAddPercent>
+		<DefenceAdd>护甲防御 +{0}</DefenceAdd>
+		<DefenceAddPercent>护甲防御 +{0}%</DefenceAddPercent>
+		<MoveSpeedAdd>航行速度 +{0}</MoveSpeedAdd>
+		<MoveSpeedAddPercent>航行速度 +{0}%</MoveSpeedAddPercent>
+		<WeaponCritProbAdd>暴击率 +{0}%</WeaponCritProbAdd>
+		<WeaponCritAttackAddPercent>暴击伤害加成 +{0}%</WeaponCritAttackAddPercent>
+		<WeaponDefencePenetrate rich="yes">装甲穿透 +{0}</WeaponDefencePenetrate>
+		<ShieldHpAddPercent>护盾生命值 +{0}%</ShieldHpAddPercent>
+		<ShieldDefenceAdd>护盾防御 +{0}</ShieldDefenceAdd>
+		<ShieldRps>护盾自修复 +{0}/秒</ShieldRps>
+		<Dodge>伤害躲避几率 +{0}%</Dodge>
+	</Char>
+
+	<CharRemark>
+		<Tech>科技加成</Tech>
+		<Driver>驱动加成</Driver>
+	</CharRemark>
+
+	<SkillMode>
+		<Passive>被动</Passive>
+		<Active>主动</Active>
+		<TriggerCast>主动</TriggerCast>
+		<SustainedCast>主动</SustainedCast>
+	</SkillMode>
+
+	<Skill>
+		<Ranger>奔袭</Ranger>
+		<Demolition>自爆</Demolition>
+		<Medic>补给</Medic>
+		<Rogue>伏击</Rogue>
+		<AOEMissile>爆破导弹</AOEMissile>
+		<AOEMissileLongRange>远程爆破导弹</AOEMissileLongRange>
+		<Dodge>灵巧</Dodge>
+		<Greed>掠夺</Greed>
+		<MissilesGroup>喀秋莎火箭发射器</MissilesGroup>
+		<SplitLance>分裂激光</SplitLance>
+		<MedicLink>女妖之触</MedicLink>
+		<MedicShield>护盾充能</MedicShield>
+		<Shield>离子护盾</Shield>
+		<ShieldLock>炮塔护罩</ShieldLock>
+		<LargeShield>离子防护罩</LargeShield>
+		<EngineTearer>引擎撕裂者</EngineTearer>
+		<Dehead>斩首</Dehead>
+		<DefenceBroker>破防</DefenceBroker>
+		<Flash>穿刺闪电</Flash>
+		<DefencePenetration>装甲穿透</DefencePenetration>
+		<Flamer>离子焰喷射器</Flamer>
+		<Shootgun>霰弹离子炮</Shootgun>
+		<FortressCannon>火炮形态</FortressCannon>
+		<FortressShip>飞行形态</FortressShip>
+		<FortressRecover>自修复</FortressRecover>
+		<Thorns>剑背防御系统</Thorns>
+		<SummonCraft>部署"炽"</SummonCraft>
+		<SummonMiniFighter>部署"闪跃"</SummonMiniFighter>
+		<AttackDown>宏电效应</AttackDown>
+		<BallLightning>球形闪电</BallLightning>
+    <BossSummonSnakeGuard>部署“霜蛇守卫”</BossSummonSnakeGuard>
+    <BossSummonAttacker2>部署“耀”护卫机</BossSummonAttacker2>
+    <BossHGuideMissileCircle>追踪粒子导弹</BossHGuideMissileCircle>
+    <BossHGuideMissileArray>粒子导弹</BossHGuideMissileArray>
+    <BossSummonAttacker3>部署“耀”攻击机</BossSummonAttacker3>
+    <BossRestoreHp>自修复生物装甲</BossRestoreHp>
+    
+		<BaseLaser>镭射激光</BaseLaser>
+		<BaseAOEMissleGroup>制导弹群</BaseAOEMissleGroup>
+		<BasePointAdd>备用动力</BasePointAdd>
+		<BaseSpeedUp>推进力场</BaseSpeedUp>
+		<BaseShootGuard>玄武守卫</BaseShootGuard>
+		<BaseDefenceField>铁壁推进</BaseDefenceField>
+		<BaseBigBomb>高爆导弹</BaseBigBomb>
+		<BaseAOEMissleArray>轰炸阵列</BaseAOEMissleArray>
+		<BaseAOEMissleCircle>环形弹幕</BaseAOEMissleCircle>
+
+		<BasePower>电力优势</BasePower>
+		<BasePower2>超载供电</BasePower2>
+
+		<Insight>洞察</Insight>
+		<Sapper>母舰杀手</Sapper>
+	</Skill>
+	<SkillDesc>
+		<Ranger>高速奔袭敌方，遇敌后终止.奔袭速度加成{speedAdd}。</Ranger>
+		<Demolition>在被摧毁时，启动自爆装置，对周围{aoeRadius}范围内的敌军造成{attack}伤害。自爆形成的冲击波会引起其他爆裂舰的自爆。</Demolition>
+		<Medic>补给周围的友军，修复{hpRecoverPercent}%的生命值。达到兵线时释放。</Medic>
+		<Rogue>开启扭曲空间，转移到航道上最远端的敌舰后方，并给予敌方致命一击。该次攻击必定造成暴击，并增加100%的暴击伤害。</Rogue>
+		<AOEMissile>装配具有爆破能力的导弹，对爆炸点{s_aoeRadius}范围内的敌军造成伤害。</AOEMissile>
+		<AOEMissileLongRange>装配具有超远距离轰炸能力的爆破导弹，对爆炸点{s_aoeRadius}范围内的敌军造成伤害。</AOEMissileLongRange>
+		<MissilesGroup>装配喀秋莎导弹发射器，每次攻击发射多枚具有远程打击能力的普通导弹。</MissilesGroup>
+		<SplitLance>具有分裂效果的激光不仅能有效打击目标单位，而且会波及其周围的敌军。</SplitLance>
+		<Dodge>凭借轻巧的舰体和优秀的装甲结构，使得小型战舰在遭受实体炮弹攻击时，有{s_dodgeProb}的几率躲避伤害。但对于激光、爆破、离子焰等伤害，躲避几率大幅下降。</Dodge>
+		<Greed>人为财死!每次攻击有{s_greedProb}的几率获取{s_greedMoney}@Money@。获取@Money@数量随等级提升而增多。</Greed>
+		<MedicLink>与周围友军建立牵引链，被牵引的单位与补给舰速度同步（若被牵引单位速度较低）。同时，被牵引的单位每秒修复{hpRecoverPerSec}生命值。同一单位不能被同时修复。</MedicLink>
+		<MedicShield>为周围{radius}范围内的离子护盾补充能量，使友军的护盾值恢复{recover}.冷却时间{cooldown}秒。</MedicShield>
+		<Shield>离子护盾为战舰提供一层坚固的外围防护，使得战舰具有优秀的抗打击能力。离子护盾对激光、爆破、离子焰等伤害提供额外减免。</Shield>
+		<ShieldLock>在战斗开始时，炮塔拥有一个无敌护罩。30秒后护罩失效。</ShieldLock>
+		<LargeShield>提供一个巨大的离子防护罩以掩护周围友军。离子防护罩对激光、爆破、离子焰等伤害提供额外减免。</LargeShield>
+		<EngineTearer>每{cooldown}秒发射一枚引擎撕裂者导弹，破坏区域内敌军战舰的引擎系统，使得敌军速度降低{speedDownPercent}%。</EngineTearer>
+		<DefenceBroker>高能激光在短时间内释放出巨大热量，可以灼伤敌舰的护甲系统，使攻击目标的防御下降{defenceDownPercent}%，持续{effectTime}秒。</DefenceBroker>
+		<Dehead>对敌方堡垒、炮塔和母舰造成暴击伤害。</Dehead>
+		<Flash>闪电攻击可以穿透护盾，有效压制具有强大护盾的战舰。</Flash>
+		<Flamer>装配离子焰喷射器，灼烧前方60度角内的所有敌方单位。</Flamer>
+		<Shootgun>装配霰弹离子炮，同时发射多枚离子炮弹。
+(别听隔壁的工程师胡扯，磁轨加速器早已取代了滑膛)</Shootgun>
+		<FortressCannon>"堡垒"在遇敌后从飞行形态进入火炮形态。火炮形态下，"堡垒"无法移动，但能获得攻击能力。</FortressCannon>
+		<FortressShip>火炮形态的"堡垒"在脱离战斗后，当其他飞行形态的"堡垒"经过时，会重新进入飞行形态。</FortressShip>
+		<FortressRecover>"堡垒"在非战斗状态下，具备自我修复的能力。火炮形态下，修复能力进一步增强。</FortressRecover>
+		<Thorns>剑背防御系统能在装甲遭受攻击时自动反击。</Thorns>
+		<DefencePenetration>攻击具有穿透目标装甲的能力，忽视目标{s_defencePenetration}的防御值。</DefencePenetration>
+		<SummonCraft>部署"炽"激光攻击机。最多同时拥有{count}架攻击机，攻击机被击毁后需要{unitRenewDuration}秒重新补充。</SummonCraft>
+		<SummonMiniFighter>部署"闪跃"导弹攻击机。消耗{buildPointCast}@BuildPoint@，部署3架攻击机。最多同时拥有{count}架。</SummonMiniFighter>
+		<AttackDown>球形闪电引发的宏电效应将破坏敌舰的武器系统，使球形闪电范围内的敌军攻击力下降{downPercent}%，持续{effectTime}秒。</AttackDown>
+		<BallLightning>球形闪电是一种杀伤力极高的宏电子武器，每次发射需要消耗1辐能。
+球形闪电对其范围内的敌军造成持续伤害，并在一段时间后进入不稳定状态。处于不稳定状态的球状闪电，释放出大量能量，伤害不断上升，最终坍缩爆炸。</BallLightning>
+    <BossSummonSnakeGuard>部署“霜蛇守卫”导弹攻击机，“霜蛇守卫”可围绕主舰旋转，并打击其所在航线及相邻航线上的敌人。</BossSummonSnakeGuard>
+    <BossSummonAttacker2>部署“耀”激光护卫机。“耀”携带轻型激光武器，对无护盾保护的敌人有强力的杀伤能力，可在“辉光”的巨大护盾的庇护下保护主舰。</BossSummonAttacker2>
+    <BossHGuideMissileCircle>追踪粒子导弹携带有自主导航系统，可实现精准远程打击目标。</BossHGuideMissileCircle>
+    <BossHGuideMissileArray>粒子导弹是在现有的导弹技术上改进而成，其独特的粒子能量对护盾具有卓越的破坏力，但由于能量消耗巨大，仅可安装在核动力舰上。</BossHGuideMissileArray>
+    <BossSummonAttacker3>部署“耀”攻击机。“耀”携带轻型激光武器，对无护盾保护的敌人有强力的杀伤能力，在“辉光Ⅱ型”的大量能源支持下，可不断出击支援前方战线。</BossSummonAttacker3>
+    <BossRestoreHp>自修复生物装甲具有快速回复的能力，但这种材料非常稀有无法量产。</BossRestoreHp>
+    
+		<BaseLaser>启用镭射激光炮对指定航道上的敌军进行攻击，每束激光造成{attack}伤害。</BaseLaser>
+		<BaseAOEMissleGroup>定位并开启导弹群制导，对区域进行轰炸，每发导弹将造成{attack}爆破伤害。</BaseAOEMissleGroup>
+		<BasePointAdd>启用备用动力系统，立即获得{pointAdd}产能点，并在{duration}秒内持续获得每秒{recoverAdd}的产能恢复加成。</BasePointAdd>
+		<BaseSpeedUp>在指定航道上开启非对称质量场，使我军移动速度增加{speed}，防御增加{defence}。</BaseSpeedUp>
+		<BaseShootGuard>发射一枚装载"玄武守卫"的运载火箭.运载火箭在指定位置爆炸造成少量伤害，同时部署"玄武守卫"巨型光束炮。
+"玄武守卫"对四周不断扫射，但会在{lifeDuration}秒内逐渐损失生命，最终自毁。</BaseShootGuard>
+		<BaseDefenceField>启动强力推进模式，在指定航道上建立"铁壁"防御屏障。
+"铁壁"不仅拥有强大的防御护盾，保护我方部队推进，而且在航道上设置加速力场，使我方单位移动速度增加{speed}。"铁壁"到达敌方母舰附近后会自毁。</BaseDefenceField>
+
+    <BasePower>在占领航路后，母舰的@BuildPoint@恢复能力增强。持续占航路一段时间或摧毁敌方炮塔，增强效果上升。</BasePower>
+		<BasePower2>战斗进入白热化后(开局3分钟后)，电力装置进入超载状态，@BuildPoint@恢复速度增加50%。</BasePower2>
+
+		<Insight>"飓风"更容易发现敌舰弱点，拥有非常高的初始暴击率和暴击伤害加成。</Insight>
+		<Sapper>装配"母舰杀手"反母舰导弹系统，能够远距离打击敌方母舰。每{cooldown}秒发射两枚锁定敌方母舰的导弹，每枚导弹对母舰或炮塔造成{attack}伤害。</Sapper>
+	</SkillDesc>
+	<Unit>
+		<Human_Fighter>轻型驱逐舰</Human_Fighter>
+		<Human_Ranger>轻型侦查舰</Human_Ranger>
+		<Human_Rogue>轻型战术驱逐舰</Human_Rogue>
+		<Human_Frigate>轻型导弹护卫舰</Human_Frigate>
+		<Human_Flash>轻型闪电护卫舰</Human_Flash>
+		<Human_SmallTank>轻型激光护卫舰</Human_SmallTank>
+		<Human_Sapper>轻型突击舰</Human_Sapper>
+		<Human_Cruiser>中型巡洋舰</Human_Cruiser>
+		<Human_Carry>中型激光巡洋舰</Human_Carry>
+		<Human_Bomber>中型火力支援舰</Human_Bomber>
+		<Human_Assassin>中型爆裂舰</Human_Assassin>
+		<Human_Flamer>中型喷射舰</Human_Flamer>
+		<Human_Shootgun>中型离子炮舰</Human_Shootgun>
+		<Human_Cannon>中型辐能宏电炮</Human_Cannon>
+		<Human_BattleShip>重型战列舰</Human_BattleShip>
+		<Human_Guard>重型力场防御舰</Human_Guard>
+		<Human_Tank>重型装甲舰</Human_Tank>
+		<Human_Medic>重型补给舰</Human_Medic>
+		<Human_Carrier>重型运载舰</Human_Carrier>
+		<Human_Fortress>重型火箭炮</Human_Fortress>
+		<Human_Factory>重型支援舰</Human_Factory>
+    <Human_Boss1>功能型超级战舰</Human_Boss1>
+    <Human_Boss2>支援型超级战舰</Human_Boss2>
+    <Human_Boss3>输出型超级战舰</Human_Boss3>
+    <Human_Boss4>支援型超级战舰</Human_Boss4>
+    <Human_Boss5>肉盾型超级战舰</Human_Boss5>
+    
+		<Human_TurretNormal>重甲炮塔</Human_TurretNormal>
+		<Human_TurretMissile>导弹炮塔</Human_TurretMissile>
+		<Human_TurretLance>激光炮塔</Human_TurretLance>
+		<Human_TurretAOE>爆破炮塔</Human_TurretAOE>
+		<Human_Base>星际母舰</Human_Base>
+
+		<Alien_Fighter>@Alien@轻型驱逐舰</Alien_Fighter>
+		<Alien_Ranger>@Alien@轻型侦查舰</Alien_Ranger>
+		<Alien_Rogue>@Alien@战术驱逐舰</Alien_Rogue>
+		<Alien_Frigate>@Alien@轻型导弹护卫舰</Alien_Frigate>
+		<Alien_Flash>@Alien@轻型闪电护卫舰</Alien_Flash>
+		<Alien_SmallTank>@Alien@轻型激光护卫舰</Alien_SmallTank>
+		<Alien_Cruiser>@Alien@中型巡洋舰</Alien_Cruiser>
+		<Alien_Carry>@Alien@中型激光巡洋舰</Alien_Carry>
+		<Alien_Bomber>@Alien@中型火力支援舰</Alien_Bomber>
+		<Alien_Assassin>@Alien@中型爆裂舰</Alien_Assassin>
+		<Alien_Flamer>@Alien@中型喷射舰</Alien_Flamer>
+		<Alien_Shootgun>@Alien@中型离子炮舰</Alien_Shootgun>
+		<Alien_BattleShip>@Alien@重型战列舰</Alien_BattleShip>
+		<Alien_Guard>@Alien@重型力场防御舰</Alien_Guard>
+		<Alien_Tank>@Alien@重型装甲舰</Alien_Tank>
+		<Alien_Medic>@Alien@重型补给舰</Alien_Medic>
+		<Alien_Carrier>@Alien@重型运载舰</Alien_Carrier>
+		<Alien_Fortress>@Alien@重型火箭炮</Alien_Fortress>
+		<Alien_TurretNormal>重甲炮塔</Alien_TurretNormal>
+		<Alien_TurretMissile>导弹炮塔</Alien_TurretMissile>
+		<Alien_TurretLance>激光炮塔</Alien_TurretLance>
+		<Alien_TurretAOE>爆破炮塔</Alien_TurretAOE>
+		<Alien_Base>@Alien@母舰</Alien_Base>
+
+		<Alien_Cannon>@Alien@中型辐能宏电炮</Alien_Cannon>
+		<Alien_Factory>@Alien@重型支援舰</Alien_Factory>
+	
+
+
+</Unit>
+	<UnitAgent>
+		<Human_Fighter>抢劫</Human_Fighter>
+		<Human_Ranger>游骑兵</Human_Ranger>
+		<Human_Rogue>黑洞</Human_Rogue>
+		<Human_Frigate>狼蛛</Human_Frigate>
+		<Human_Flash>雷鸣</Human_Flash>
+		<Human_SmallTank>钢牙</Human_SmallTank>
+		<Human_Sapper>工兵</Human_Sapper>
+		<Human_Cruiser>捍卫者</Human_Cruiser>
+		<Human_Carry>光棱</Human_Carry>
+		<Human_Bomber>喀秋莎</Human_Bomber>
+		<Human_Assassin>灰烬</Human_Assassin>
+		<Human_Flamer>烤箱</Human_Flamer>
+		<Human_Shootgun>霹雳</Human_Shootgun>
+		<Human_Cannon>湮灭</Human_Cannon>
+		<Human_BattleShip>飓风</Human_BattleShip>
+		<Human_Guard>银河盾</Human_Guard>
+		<Human_Tank>剑背龙</Human_Tank>
+		<Human_Medic>女妖</Human_Medic>
+		<Human_Carrier>星尘</Human_Carrier>
+		<Human_Fortress>堡垒</Human_Fortress>
+		<Human_Factory>泰坦</Human_Factory>
+    <Human_Boss1>天凛号</Human_Boss1>
+    <Human_Boss2>辉光号</Human_Boss2>
+    <Human_Boss3>死神号</Human_Boss3>
+    <Human_Boss4>辉光Ⅱ型</Human_Boss4>
+    <Human_Boss5>血蝠号</Human_Boss5>
+		<Human_Base>火种</Human_Base>
+	</UnitAgent>
+	<UnitDesc>
+		<Human_Fighter hyper="yes">
+特点: [c1]均衡 高速 刷钱[/c1]
+"抢劫"属于经典的战斗机型，作为轻型主战单位，足以胜任各项任务。
+"抢劫"所拥有的"掠夺"技能更是重要的经济来源，能够帮助舰队快速发育。
+[c2]-----------------------------------------[/c2]
+猥琐发育，别浪！
+		</Human_Fighter>
+		<Human_Ranger hyper="yes">
+特点: [c1]高速 偷袭[/c1]
+"游骑兵"作为侦查单位，具有出色的机动性和拆塔能力。
+把握好时机，"游骑兵"将是插向敌人心脏的利刃。
+[c2]-----------------------------------------[/c2]
+首先你得知道虫族那些家伙的心脏在哪。
+		</Human_Ranger>
+		<Human_Rogue hyper="yes">
+特点: [c1]位移 偷袭 暴击[/c1]
+"黑洞"通过扭曲空间位移到战场远端，给予敌人意想不到的打击。
+虽然在位移能够造成伤害增强的暴击效果，但作为轻型单位，深入敌后的"黑洞"在敌人的火力面前尤为脆弱。
+作为一种战术性单位，"黑洞"可以演绎出许多精彩的战术。
+[c2]-----------------------------------------[/c2]
+联盟重工所研发的空间扭曲器是人类星战史上最伟大的发明。
+        -- 摘自 星际百科全书 第五卷 
+		</Human_Rogue>
+		<Human_Frigate hyper="yes">
+特点: [c1]伤害输出 减速[/c1]
+"狼蛛"可以破坏敌舰引擎，造成范围减速效果，为自己和友军营造良好的输出空间。
+良好的射程，不俗的伤害，减速效果，让"狼蛛"成为优秀的输出单位，唯一问题就是太脆。
+[c2]-----------------------------------------[/c2]
+"狼蛛"是我们最杰出的作品，尽管我们做了许多尝试以提高它的战场生存能力，但最终在灵活的机动性和厚重的装甲之间，选择了前者。
+          -- "狼蛛"轻型导弹护卫舰的设计师
+		</Human_Frigate>
+		<Human_Flash hyper="yes">
+特点: [c1]输出 护盾穿刺[/c1]
+"雷鸣"不仅拥有优秀的伤害输出能力，而且具备小型战舰的一切优势，在"雷鸣"的闪电发射器面前，任何依靠离子护盾单位都不堪一击。
+[c2]-----------------------------------------[/c2]
+电闪雷鸣！
+		</Human_Flash>
+		<Human_SmallTank hyper="yes">
+特点: [c1]轻型肉盾[/c1]
+作为一款必须有抗击打能力的肉盾战舰，"钢牙"的劣势是轻型战舰的体积无法装备重型装甲。
+但这同样也是"钢牙"的最大的优势。高机动性以及"灵巧"技能的躲避效果完全可以弥补舰体装甲的不足，让"钢牙"可以及时出现在合适位置，并承担大量的伤害。
+[c2]-----------------------------------------[/c2]
+谁站都最后的，谁才是赢家！
+		</Human_SmallTank>
+		<Human_Sapper hyper="yes">
+特点: [c1]高速 母舰杀手[/c1]
+"工兵"是母舰的克星。凭借反母舰导弹系统和斩首技能，成群的"工兵"能够在非常短的时间内摧毁敌方母舰，至对手于死地。
+[c2]-----------------------------------------[/c2]
+射人先射马，擒贼先擒王。
+		</Human_Sapper>
+		<Human_Cruiser hyper="yes">
+特点: [c1]均衡 片伤[/c1]
+"捍卫者"是中规中矩的中型战列舰，不仅具有优秀的攻击、防御能力，而且拥有较高的属性成长。
+装甲防御能力和战舰机动性之间均衡让"捍卫者"在星战中游刃有余，爆破导弹更可以有效的打击成群的轻型单位。
+[c2]-----------------------------------------[/c2]
+它是我的最爱.尽管它最大的缺点就是没有突出的优点，不过你不能否认它在战场中关键作用。
+能扛，能打，能救火，你还需要它做什么?
+          -- 联盟重工首席科技官 
+		</Human_Cruiser>
+		<Human_Carry hyper="yes">
+特点: [c1]伤害输出 分裂攻击[/c1]
+"光棱"是强力的伤害输出单位，分裂攻击可以同时对多个单位造成大量伤害。
+美中不足的是，昂贵的生产的电力成本，作为一个中型单位，这势必影响对战中的战术节奏，拉长主力部队成型的时间。
+[c2]-----------------------------------------[/c2]
+"光棱"的设计灵感源自于古老的人类工业时代的一种称为"坦克"的陆行机械。
+          -- 首任联盟重工巡洋舰研发部技术总监
+		</Human_Carry>
+		<Human_Bomber hyper="yes">
+特点: [c1]伤害输出 远程攻击[/c1]
+"喀秋莎"的远程打击能力是敌人噩梦，但脆弱的舰体使其非常容易被敌军击毁。
+[c2]-----------------------------------------[/c2]
+正当梨花开遍了天涯，河上飘着柔曼的轻纱。
+喀秋莎站在那竣峭的岸上，歌声好像明媚的春光。
+         -- 一首远古的歌谣
+		</Human_Bomber>
+		<Human_Assassin hyper="yes">
+特点: [c1]自爆[/c1]
+"灰烬"除了配备高速光束炮外，更重要的杀伤手段是其自爆能力。其自爆伤害非常恐怖，几架"灰烬"组成的敢死队可以轻易摧毁掉敌人的主力部队。
+必须注意的是，"灰烬"的自爆有干涉性，会直接引起其他"灰烬"的自爆。在使用时，需要掌握一些技巧。
+[c2]-----------------------------------------[/c2]
+舰体侧面的装甲上面刻着"败者当食尘"
+            联盟重工荣誉出品
+		</Human_Assassin>
+		<Human_Flamer hyper="yes">
+特点: [c1]伤害输出 片伤 中型肉盾[/c1]
+"烤箱"装备量子焰喷射器，能够成片的杀伤敌人。
+美中不足的是量子焰喷射距离较短，需要其他支援单位的辅助。
+[c2]-----------------------------------------[/c2]
+薛定谔坍缩效应限制了量子焰的距离，以我们目前的基础物理研究水平，还无法突破这个限制。
+          -- 联盟重工量子物理学家
+		</Human_Flamer>
+		<Human_Shootgun hyper="yes">
+特点: [c1]伤害输出 霰弹[/c1]
+"霹雳"所装备的霰弹离子炮伤害极高，但射速很慢。面对强大的敌方舰队时，给予"霹雳"合适的保护，是发挥霰弹威力的有效手段。
+[c2]-----------------------------------------[/c2]
+我们都要飞出银河系了，具还解决不了卡镗的问题.
+          -- 离子炮维修工程师	
+		</Human_Shootgun>
+		<Human_Cannon hyper="yes">
+特点: [c1]伤害输出 远程攻击[/c1]
+准确的说，"湮灭"是一门威力强大的宏电子火炮。宏聚变产生的能量不仅能对敌舰舰体造成高额伤害，而且可以使精密控制器量子化，导致武器系统瘫痪或不受控制。
+但是，宏电武器对辐能高依赖严重限制了"湮灭"威力。
+[c2]-----------------------------------------[/c2]
+从量子力学的角度来讲，当我变为弱观察者时，量子幽灵的概率云向毁灭态的坍缩速度就会慢一些，也许我马上就能看见他们。
+          -- 宏电炮研发工程师的临终遗言
+		</Human_Cannon>
+		<Human_BattleShip hyper="yes">
+特点: [c1]均衡 肉盾[/c1]
+"飓风"是经典款的重型战列舰，拥有厚实的装甲和不俗的攻击力，足以应付各种炮弹的威胁。
+"飓风"作为绝对主力战舰，其综合能力评价相当之高，无法让人挑剔出弱点。
+[c2]-----------------------------------------[/c2]
+"飓风"起源于第一代重型星际战舰，是历史最悠久的战舰之一.
+通过数代的不断改良，今天的"飓风"已趋近完美。
+     -- 摘自 "飓风"重型战列舰操作手册 序言
+		</Human_BattleShip>
+		<Human_Guard hyper="yes">
+特点: [c1]护盾 支援[/c1]
+"银河盾"能够产生护盾，可以保护护盾内所有友军单位，是一种强力的战术性单位。
+[c2]-----------------------------------------[/c2]
+必选神机，没有之一
+		</Human_Guard>
+		<Human_Tank hyper="yes">
+特点: [c1]肉盾 反伤[/c1]
+"剑背龙"无疑是战场中最能扛的肉盾，高强度装甲和离子护盾让敌人打到手软。
+一队"剑背龙"组成防御网，将给后排火力输出单位提供安全的射击空间。
+[c2]-----------------------------------------[/c2]
+让那群虫子再多咬一会儿
+    -- 某"剑背龙"重型装甲舰驾驶员的口头禅
+		</Human_Tank>
+		<Human_Medic hyper="yes">
+特点: [c1]治疗 支援[/c1]	
+"女妖"作为常规性的补给单位，一直在战场中发挥着重要作用。
+"女妖"能保证友军单位能更久的提供持续火力输出。
+[c2]-----------------------------------------[/c2]
+请不要叫我太空奶妈
+		</Human_Medic>
+		<Human_Carrier hyper="yes">
+特点: [c1]航母 支援[/c1]	
+"星尘"作为重型载具本身没有攻击力，其装载的攻击机却能够远程骚扰和打击敌人。
+[c2]-----------------------------------------[/c2]
+你可以用一堆航母扫平一切，但你需要更多的护卫舰来看好他们。
+     -- "火种"号前任舰长克里斯的忠告
+		</Human_Carrier>
+		<Human_Fortress hyper="yes">
+特点: [c1]防御[/c1]	
+"堡垒"是自载式火炮，装载重型火箭发射装置。遇敌后，"堡垒"从运载模式展开为火炮模式.进入火炮模式后，"堡垒"无法移动。
+火炮模式下的强大火力和厚重的装甲，使得"堡垒"成为防守利器。
+[c2]-----------------------------------------[/c2]
+步步为营，步步为赢！
+		</Human_Fortress>
+		<Human_Factory hyper="yes">
+特点: [c1]航母 远程攻击 片伤[/c1]	
+"泰坦"是综合型的支援者，不仅具备远程轰炸能力，而且能在战场上快速部署导弹攻击机以压制敌人，使我方占据战斗的主动权。
+[c2]-----------------------------------------[/c2]
+在设计"泰坦"之时，我们大胆的尝试将巨型母舰的设计框架应用于这款重型支援舰之上。
+当年这个饱受争议的设计，如今已经在实战中得到了高度的肯定。
+          -- 联盟重工首席科技官 
+		</Human_Factory>
+    <Human_Boss1 hyper="yes">
+特点: [c1]超级舰 三路覆盖火力 光束机枪[/c1]
+"天凛"是通过大量辐能打造的超级战舰，其配备高速光束炮，并装载可攻击相邻航线的"霜蛇守卫"小型导弹护卫机，具有强大的战略作用。
+[c2]-----------------------------------------[/c2]
+"天凛"是联盟第一款超级战舰，当其在战场上出现时便可瞬间扭转局势。
+在掌握了超级战舰的制造技术后，现在我们对击败虫族充满信心。
+          -- 联盟重工首席科技官
+    </Human_Boss1>
+    <Human_Boss2 hyper="yes">
+特点: [c1]超级舰 支援型 护盾保护[/c1]
+"辉光"是通过大量辐能打造的超级战舰，其巨大的离子护盾和"辉光"粒子导弹系统是舰队推进的有力保障。
+[c2]-----------------------------------------[/c2]
+"辉光"号上首次安装了粒子导弹系统，但目前还无法将其稳定的控制。
+          -- 联盟重工首席科技官
+    </Human_Boss2>
+    <Human_Boss3 hyper="yes">
+特点: [c1]超级舰 强力输出型[/c1]
+"死神"是联盟重工绝对的C位超级战舰，强大的火力配备和霸气的造型根本不惧怕任何虫子的叮咬。
+[c2]-----------------------------------------[/c2]
+死神降临！
+    </Human_Boss3>
+    <Human_Boss4 hyper="yes">
+特点: [c1]超级舰 远程支援型[/c1]
+"辉光Ⅱ型"是由"辉光"号超级战舰改进而成，其“辉光Ⅱ型”导弹系统已解除限制，能持续的对敌方发动毁灭式的打击。
+[c2]-----------------------------------------[/c2]
+改进后的“辉光Ⅱ型”虽然会消耗更多辐能，但相比起强大的远程火力，这点辐能又算得了什么呢？
+      -- 联盟重工首席科技官
+    </Human_Boss4>
+    <Human_Boss5 hyper="yes">
+特点: [c1]超级舰 范围输出 肉盾[/c1]
+"血蝠号"拥有最新一代的全新生物装甲系统，其极强的自我修复能力和大范围的粒子焰武器能够保证血蝠对虫子进行不断的猎杀。
+[c2]-----------------------------------------[/c2]
+蝙蝠是虫子天生的克星!
+    </Human_Boss5>
+    
+    <Alien_Fighter></Alien_Fighter>
+		<Alien_Ranger></Alien_Ranger>
+		<Alien_Rogue></Alien_Rogue>
+		<Alien_Frigate></Alien_Frigate>
+		<Alien_Cruiser></Alien_Cruiser>
+		<Alien_Bomber></Alien_Bomber>
+		<Alien_Assassin></Alien_Assassin>
+		<Alien_Carry></Alien_Carry>
+		<Alien_BattleShip></Alien_BattleShip>
+		<Alien_Medic></Alien_Medic>
+		<Alien_Guard></Alien_Guard>
+		<Alien_Tank></Alien_Tank>
+
+
+		<Human_TurretNormal hyper="yes">
+特点: [c1]肉盾[/c1]	
+"重甲炮塔"有着极佳的防御能力，不仅装甲坚固，而且有着不错的杀伤力，能够有效保护母舰的安全。
+在各个方面都具有良好表现的"重甲炮塔"，是捍卫母舰的第一选择。
+		</Human_TurretNormal>
+		<Human_TurretMissile hyper="yes">
+特点: [c1]远程[/c1]
+"导弹炮塔"的射程几乎可以覆盖半个战场，为我方舰队提供良好的远程火力支持。
+		</Human_TurretMissile>
+		<Human_TurretLance hyper="yes">
+特点: [c1]远程 破防[/c1]
+"激光炮塔"虽然相对脆弱，却具有良好的支援特性。较远的射程、破防能力和不错的伤害，使我方可以完全控制战场近端的控制权。
+		</Human_TurretLance>
+		<Human_TurretAOE hyper="yes">
+特点: [c1]片伤[/c1]	
+"爆破炮塔"的范围伤害注定了它是防守端的王者，可以有限制约成群而来的敌方部队，更是偷袭单位的克星。
+"爆破炮塔"的缺陷是射程较短，虽然自保有余，但对战场近端的支持有限。
+		</Human_TurretAOE>
+		<Alien_TurretNormal>重甲炮塔</Alien_TurretNormal>
+		<Alien_TurretMissile>导弹炮塔</Alien_TurretMissile>
+		<Alien_TurretLance>激光炮塔</Alien_TurretLance>
+		<Alien_TurretAOE>爆破炮塔</Alien_TurretAOE>
+		<Human_Base hyper="yes">
+虫族入侵战争中残存的星际母舰为数不多，"火种"号是其中之一。
+母舰是我方舰队的基地，如果被毁，则战斗失败。
+		</Human_Base>
+		<Alien_Base>母舰</Alien_Base>
+
+	</UnitDesc>
+	<DefenceType>
+		<Light>轻型</Light>
+		<Middle>中型</Middle>
+		<Heavy>重型</Heavy>
+		<Super>巨型</Super>
+		<Other>其他</Other>
+	</DefenceType>
+	<SkillCastType>
+		<Channel>航道</Channel>
+		<Position>范围</Position>
+		<Click>全战场</Click>
+	</SkillCastType>
+	<DamageType>
+		<AntiLight>爆破-克制轻型</AntiLight>
+		<AntiMiddle>冲击-克制中型</AntiMiddle>
+		<AntiHeavy>穿刺-克制重型</AntiHeavy>
+		<AntiSuper>AntiSuper</AntiSuper>
+		<AntiOther>内部保留</AntiOther>
+		<AntiLMH>高能-克制所有</AntiLMH>
+		<AntiLMHS>AntiLMHS</AntiLMHS>
+		<Normal>一般</Normal>
+	</DamageType>
+	<Tech>
+		<LightAttackAdd>武器改良</LightAttackAdd>
+		<LightDefenceAdd>装甲改良</LightDefenceAdd>
+		<LightSpeedUp>驱动核心-迅捷</LightSpeedUp>
+		<LightDodge>反射控制芯片</LightDodge>
+
+		<MiddleAttackAdd>武器改良</MiddleAttackAdd>
+		<MiddleDefenceAdd>装甲改良</MiddleDefenceAdd>
+		<MiddleDefencePenetrate>驱动核心-锋利</MiddleDefencePenetrate>
+		<MiddleCrit>不稳定爆裂器</MiddleCrit>
+
+		<HeavyAttackAdd>武器改良</HeavyAttackAdd>
+		<HeavyDefenceAdd>装甲改良</HeavyDefenceAdd>
+		<HeavyHP>驱动核心-稳固</HeavyHP>
+		<HeavyShield>护盾重构</HeavyShield>
+
+		<CommonBasePowerUp>母舰自稳定系统</CommonBasePowerUp>
+		<CommonBuildPointRecoverAdd>循环供电</CommonBuildPointRecoverAdd>
+		<CommonSkillPointRecoverAdd>辐能增益</CommonSkillPointRecoverAdd>
+		<CommonBuildPointInit>光能复用</CommonBuildPointInit>
+		<CommonReinforce>增援</CommonReinforce>
+		<CommonTurretGetSkillPoint>应激反应</CommonTurretGetSkillPoint>
+		<CommonAntiDamageAdd>智能分析系统</CommonAntiDamageAdd>
+
+	</Tech>
+	<TechDesc>
+		<LightAttackAdd>提升@UnitType.Light@战舰的攻击，每级增加{0}%</LightAttackAdd>
+		<LightDefenceAdd>提升@UnitType.Light@战舰的防御，每级增加{0}</LightDefenceAdd>
+		<LightSpeedUp>提升@UnitType.Light@战舰的航行速度和攻击速度，每级航行速度增加{0}、攻击速度提升{1}%</LightSpeedUp>
+		<LightDodge>灵巧技能强化，触发几率增加{0}%</LightDodge>
+
+		<MiddleAttackAdd>提升@UnitType.Middle@战舰的攻击，每级增加{0}%</MiddleAttackAdd>
+		<MiddleDefenceAdd>提升@UnitType.Middle@战舰的防御，每级增加{0}</MiddleDefenceAdd>
+		<MiddleDefencePenetrate>增强@UnitType.Middle@战舰的护甲穿透能力，每级提升{0}</MiddleDefencePenetrate>
+		<MiddleCrit>提升@UnitType.Middle@战舰的暴击能力，每级暴击率提升{0}%、暴击伤害加成提升{1}%</MiddleCrit>
+
+		<HeavyAttackAdd>提升@UnitType.Heavy@战舰的攻击，每级增加{0}%</HeavyAttackAdd>
+		<HeavyDefenceAdd>提升@UnitType.Heavy@战舰的防御，每级增加{0}</HeavyDefenceAdd>
+		<HeavyHP>提升@UnitType.Heavy@战舰的生命值，每级增加{0}%</HeavyHP>
+		<HeavyShield>增强@UnitType.Heavy@战舰的护盾，每级护盾生命值提升{0}、护盾防御提升{1}.对于初始没有护盾的战舰，则会拥有一个护盾</HeavyShield>
+
+		<CommonBasePowerUp>增强母舰及炮塔，母舰和炮塔的生命值提升{0}%，炮塔的攻击提升{1}%</CommonBasePowerUp>
+		<CommonBuildPointRecoverAdd>提高@BuildPoint@恢复速度，每级初始恢复速度增加{1}%</CommonBuildPointRecoverAdd>
+		<CommonSkillPointRecoverAdd>提高@SkillPoint@恢复速度，每级初始恢复速度增加{1}%</CommonSkillPointRecoverAdd>
+		<CommonBuildPointInit>战斗开始时，初始@BuildPoint@增加{0}</CommonBuildPointInit>
+		<CommonReinforce>在释放任意母舰技能时，立即召唤增援舰队赶赴战场</CommonReinforce>
+		<CommonTurretGetSkillPoint>母舰炮塔击毁或参与击毁敌军战舰时，有一定几率获得@SkillPoint@</CommonTurretGetSkillPoint>
+		<CommonAntiDamageAdd>强化战舰克制关系，被克制战舰的伤害效果提升为1.5倍</CommonAntiDamageAdd>
+	</TechDesc>
+
+	<Driver>
+		<Locked>未开启</Locked>
+		<Empty>未安装</Empty>
+
+		<MoveSpeedAdd_2>迅驰Turbo Pro 芯片</MoveSpeedAdd_2>
+		<MoveSpeedAdd_1>迅驰Turbo 芯片</MoveSpeedAdd_1>
+		<HpAddPercent_3>磐石3型 芯片</HpAddPercent_3>
+		<HpAddPercent_2>磐石2型 芯片</HpAddPercent_2>
+		<HpAddPercent_1>磐石1型 芯片</HpAddPercent_1>
+		<DefenceAdd_3>赛博顿G251 芯片</DefenceAdd_3>
+		<DefenceAdd_2>赛博顿G261 芯片</DefenceAdd_2>
+		<DefenceAdd_1>赛博顿G271 芯片</DefenceAdd_1>
+		<HpDefenceAdd_3>无畏T5型 芯片</HpDefenceAdd_3>
+		<HpDefenceAdd_2>无畏T6型 芯片</HpDefenceAdd_2>
+		<HpDefenceAdd_1>无畏T7型 芯片</HpDefenceAdd_1>
+		<ShieldHpAddPercent_2>光辉 增强型 芯片</ShieldHpAddPercent_2>
+		<ShieldHpAddPercent_1>光辉 芯片</ShieldHpAddPercent_1>
+		<ShieldHpAddPercent_G>光辉 战术版 芯片</ShieldHpAddPercent_G>
+		<ShieldDefenceAdd_1>星云 芯片</ShieldDefenceAdd_1>
+		<ShieldDefenceAdd_G>星云 战术版 芯片</ShieldDefenceAdd_G>
+		<ShieldAdd_2>强韧 芯片</ShieldAdd_2>
+		<ShieldAdd_1>强韧 战术版 芯片</ShieldAdd_1>
+		<WeaponAttackAddPerent_3>怒风T979 芯片</WeaponAttackAddPerent_3>
+		<WeaponAttackAddPerent_2>怒风T969 芯片</WeaponAttackAddPerent_2>
+		<WeaponAttackAddPerent_1>怒风T959 芯片</WeaponAttackAddPerent_1>
+		<WeaponCrit_1>毁灭 芯片</WeaponCrit_1>
+		<WeaponCritProbAdd_1>精准 芯片</WeaponCritProbAdd_1>
+		<WeaponRateAddPerent_2>敏锐 升级版 芯片</WeaponRateAddPerent_2>
+		<WeaponRateAddPerent_1>敏锐 芯片</WeaponRateAddPerent_1>
+		<WeaponAttackRateAdd_3>威风R7 芯片</WeaponAttackRateAdd_3>
+		<WeaponAttackRateAdd_2>威风R6 芯片</WeaponAttackRateAdd_2>
+		<WeaponAttackRateAdd_1>威风R5 芯片</WeaponAttackRateAdd_1>
+		<AttackHpAdd_3>镇远T877-G 芯片</AttackHpAdd_3>
+		<AttackHpAdd_2>镇远T867-G 芯片</AttackHpAdd_2>
+		<AttackHpAdd_1>镇远T857-G 芯片</AttackHpAdd_1>
+		<WeaponDefencePenetrate_1>收割者 芯片</WeaponDefencePenetrate_1>
+		<MedicLink_1>默 芯片</MedicLink_1>
+		<MedicShield_1>静 芯片</MedicShield_1>
+		<Demolition_1>灭 芯片</Demolition_1>
+		<Dodge_1>影 芯片</Dodge_1>
+		<ShieldRps_1>不屈 芯片</ShieldRps_1>
+		<TurretLevelUp_1>炮塔强化 芯片</TurretLevelUp_1>
+		<SkillLevelUp_1>技能强化 芯片</SkillLevelUp_1>
+	</Driver>
+
+	<DriverLevel>
+		<L1>I</L1>
+		<L2>II</L2>
+		<L3>III</L3>
+		<L4>IV</L4>
+		<L5>V</L5>
+	</DriverLevel>
+
+	<DriverDesc>
+		<Demolition>自爆技能伤害+{0}%</Demolition>
+		<MedicLink>女妖之触修复效果+{0}%</MedicLink>
+		<MedicShield>护盾充能修复效果+{0}%</MedicShield>
+		<TurretLevelUp>母舰炮塔强度 +{0}</TurretLevelUp>
+		<SkillLevelUp rich="yes">母舰技能强度 +{0}[n](对战场补给箱技能亦生效)</SkillLevelUp>
+	</DriverDesc>
+</Lang>

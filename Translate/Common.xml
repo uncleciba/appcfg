@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Lang>
+	<QuestType>
+		<DestroyBase>摧毁敌方基地</DestroyBase>
+        <TurretLive>{0}座母舰炮塔存活</TurretLive>
+        <TurretNoDamaged>{0}座母舰炮塔完好无损</TurretNoDamaged>
+        <WinInTime>在4分钟内获得胜利</WinInTime>
+        <MerchantDead>少于{0}艘运输舰被击毁</MerchantDead>
+        <TowerLive>{0}个堡垒存活</TowerLive>
+        <EnemyBossKill>摧毁敌方所有超级战舰</EnemyBossKill>
+    	<EnemyTowerKill>摧毁敌方{0}座堡垒</EnemyTowerKill>
+    	<EnemyTurretKill>摧毁敌方{0}座母舰炮塔</EnemyTurretKill>
+	</QuestType>
+
+	<Name>
+		<Mate>克里斯·AI</Mate>
+		<Captain>舰长·黑手</Captain>
+	</Name>
+
+	<Default>
+		<GameName>星际怼战</GameName>
+		<Hour>小时</Hour>
+		<Minute>分钟</Minute>
+		<Second>秒</Second>
+		<Money>星币</Money>
+		<Bill>氪核</Bill>
+		<MoneyShort>金币</MoneyShort>
+		<BillShort>Kr</BillShort>
+		<Part>部件</Part>
+		<Unit>战舰</Unit>
+		<Warehouse>Warehouse</Warehouse>
+		<UnitType>战舰类型</UnitType>
+		<Human>人类</Human>
+		<Alien>虫族</Alien>
+		<BuildPoint>电力</BuildPoint>
+		<SkillPoint>辐能</SkillPoint>
+		<Tech>科技</Tech>
+		<DisUnit>码</DisUnit>
+		<Fuel>燃料</Fuel>
+		<Blueprint>图纸</Blueprint>
+		<BlueprintTitle>{0}图纸x{1}</BlueprintTitle>
+		<BlueprintString>{1}"{0}"图纸</BlueprintString>
+		<Comma>，</Comma>
+		
+	</Default>
+	
+	<UnitType>
+		<Light>轻型</Light>
+		<Middle>中型</Middle>
+		<Heavy>重型</Heavy>
+		<Super>巨型</Super>
+	</UnitType>
+
+	<Shop>
+		<Vip>[正式版]</Vip>
+    <VipGift1>[死神号礼包]</VipGift1>
+    <VipGift2>[辉光Ⅱ型礼包]</VipGift2>
+		<Gold1>[@Money@]</Gold1>
+		<Gold2>[@Money@]</Gold2>
+		<Gold3>[@Money@]</Gold3>
+		<Fuel>[@Fuel@]</Fuel>
+		<Video>[视频宝箱]</Video>
+		<BlueprintChest>[图纸箱]</BlueprintChest>
+		<BlueprintSet>[图纸]</BlueprintSet>
+	</Shop>
+
+	<ShopPrice>
+		<Vip></Vip>
+    <VipGift1></VipGift1>
+    <VipGift2></VipGift2>
+		<Gold1></Gold1>
+		<Gold2></Gold2>
+		<Gold3></Gold3>
+		<Fuel></Fuel>
+		<Video></Video>
+		<BlueprintChest></BlueprintChest>
+		<BlueprintSet></BlueprintSet>
+	</ShopPrice>
+
+	<ShopDesc>
+		<Vip rich="yes">1,去广告,直接获取视频广告奖励[n]2,额外的每日补给[n]3,燃料上限增加为40,恢复速度加倍[n]4,视频宝箱储存上限增加为6</Vip>
+    <VipGift1 rich="yes">购买后立刻获得“死神号”超级战舰+[n]100张“死神号图纸”+20000星币![n][n]（购买后以图纸形式发放，共200张图纸)[n] [限购一次]</VipGift1>
+    <VipGift2 rich="yes">购买后立刻获得“辉光Ⅱ型”超级战舰+[n]100张“辉光Ⅱ型图纸”+20000星币![n][n]（购买后以图纸形式发放，共200张图纸）[n] [限购一次]</VipGift2>
+		<Gold1>购买{0}@Money@</Gold1>
+		<Gold2>购买{0}@Money@</Gold2>
+		<Gold3>购买{0}@Money@</Gold3>
+		<Fuel>使用{0}@Money@购买1@Fuel@</Fuel>
+		<Video rich="yes">观看视频后获得一个宝箱</Video>
+		<BlueprintChest>使用{0}@Money@购买一个图纸箱</BlueprintChest>
+		<BlueprintSet_Money>使用{0}@Money@购买{1}</BlueprintSet_Money>
+		<BlueprintSet>购买{0}</BlueprintSet>
+	</ShopDesc>
+
+	<ResearchCondition>
+		<Init>初始拥有</Init>
+		<MissionPass>完成任务{0}</MissionPass>
+		<StarCount>获取{0}个任务星</StarCount>
+		<BaseLevel>母舰等级达到{0}</BaseLevel>
+		<Vip>购买[正式版]</Vip>
+	</ResearchCondition>
+</Lang>

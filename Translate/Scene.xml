@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Lang>
+	<Default>
+		<NoEnoughMoney>@Money@不足</NoEnoughMoney>
+		<NoEnoughTech>科技点不足</NoEnoughTech>
+		<NoEnoughBlueprint>@Blueprint@不足</NoEnoughBlueprint>
+		<BaseLevelLimit rich="yes">战舰等级不能高于母舰等级[n]请先升级母舰</BaseLevelLimit>
+		<MaxLevelLimit>已达到最高等级</MaxLevelLimit>
+		<NoReachFront>未达到先决条件</NoReachFront>
+		<MaxLimit>已达到上限</MaxLimit>
+		<NoEnoughLevel>等级不足</NoEnoughLevel>
+		<Dodge>躲避</Dodge>
+	</Default>
+	<VSWorldMap>
+		<Locked>未解锁</Locked>
+		<OurUnit>我们的飞船</OurUnit>
+		<Mission>任务</Mission>
+		<Pirate1_1>太空海盗</Pirate1_1>
+		<Pirate1_2>太空海盗</Pirate1_2>
+		<Pirate2_1>太空海盗</Pirate2_1>
+		<Pirate2_2>太空海盗</Pirate2_2>
+		<Pirate3_1>太空海盗</Pirate3_1>
+		<Pirate3_2>太空海盗</Pirate3_2>
+		<Pirate4_1>太空海盗</Pirate4_1>
+		<Pirate4_2>太空海盗</Pirate4_2>
+		<Home rich="yes">地球</Home>
+
+		<Chapter1 rich="yes">[size=56]第一章[/size][n]逃离地球</Chapter1>
+		<Chapter2 rich="yes">[size=56]第二章[/size][n]星海流浪</Chapter2>
+		<Chapter3 rich="yes">[size=56]第三章[/size][n]同室操戈</Chapter3>
+		<Chapter4 rich="yes">[size=56]第四章[/size][n]穿越虫洞</Chapter4>
+
+		<M1>@Alien@前哨舰队</M1>
+		<M2>@Alien@前哨舰队</M2>
+		<M3>火星</M3>
+		<M4>@Alien@远征舰队</M4>
+		<M5>鬼影星</M5>
+		<M6>仙女座阿尔法</M6>
+		<M7>@Alien@远征舰队</M7>
+		<M8>巨熊星</M8>
+		<M9>@Alien@远征舰队</M9>
+		<M10 rich="yes">岩卯星@Alien@远征基地</M10>
+		<M11>@Alien@舰队</M11>
+		<M12>行商</M12>
+		<M13>溪谷星</M13>
+		<M14>天狐座星云</M14>
+		<M15>霜语星</M15>
+		<M16>@Alien@舰队</M16>
+		<M17>冬泉星</M17>
+		<M18>太空站</M18>
+		<M19>鲑鱼座欧米伽</M19>
+		<M20>@Alien@指挥母舰</M20>
+		<M21>地球联盟叛军</M21>
+		<M22>枯岸星</M22>
+		<M23>川陀</M23>
+		<M24>@Human@运输队</M24>
+		<M25>@Alien@超级舰队</M25>
+		<M26>深蓝星</M26>
+		<M27>格雷印记</M27>
+		<M28>蝰蛇双星</M28>
+		<M29>@Alien@舰队</M29>
+		<M30>端点星</M30>
+		<M31>地球联盟边防军</M31>
+		<M32>三鼠星</M32>
+		<M33>黯尘星</M33>
+		<M34>@Alien@舰队</M34>
+		<M35>@Alien@舰队</M35>
+		<M36>锈海星</M36>
+		<M37>@Alien@舰队</M37>
+		<M38>炽天使星云</M38>
+		<M39>@Alien@舰队</M39>
+		<M40>@Alien@母星</M40>
+		<HardModeFlag rich="yes">虫洞[n]开启困难模式</HardModeFlag>	
+		<EndlessFlag rich="yes">暗黑森林传送门[n]进入无尽模式</EndlessFlag>	
+
+
+		<HomeDescOnClick rich="yes">现在回地球可不是个明智的选择，@Alien@已经把它给毁了。[n]我们还是快去找个合适的星球落脚吧！</HomeDescOnClick>
+		<LockedOnClick rich="yes">那儿太远了，先探索最近的星球吧</LockedOnClick>
+		<HardModeFlagOnClick rich="yes">我们必须先干掉@Alien@老巢</HardModeFlagOnClick>
+		<Settlement rich="yes">地球联盟殖民据点</Settlement>
+
+		<HasChest>点击宝箱领取</HasChest>
+	</VSWorldMap>
+	<VSFleet>
+		<UnlockCast  rich="yes">花费: {0}</UnlockCast>
+		<LevelUpCast  rich="yes">升级费用: [n]{0} @Money@</LevelUpCast>
+		<StarUpCast  rich="yes">花费: {0}</StarUpCast>
+	</VSFleet>
+	<VSBattle>
+		<EngineTearer>减速</EngineTearer>
+		<DefenceBroker>破防</DefenceBroker>
+		<AttackDown>降攻</AttackDown>
+		
+		<OurCaptureChannel0 rich="yes">[c=#00FFFFFF]我方占领了左路航道[/c]</OurCaptureChannel0>
+		<OurCaptureChannel1 rich="yes">[c=#00FFFFFF]我方占领了中路航道[/c]</OurCaptureChannel1>
+		<OurCaptureChannel2 rich="yes">[c=#00FFFFFF]我方占领了右路航道[/c]</OurCaptureChannel2>
+		<EnemyCaptureChannel0 rich="yes">[c=#FF6F00FF]敌方占领了左路航道[/c]</EnemyCaptureChannel0>
+		<EnemyCaptureChannel1 rich="yes">[c=#FF6F00FF]敌方占领了中路航道[/c]</EnemyCaptureChannel1>
+		<EnemyCaptureChannel2 rich="yes">[c=#FF6F00FF]敌方占领了右路航道[/c]</EnemyCaptureChannel2>
+		<OurCaptureChannel rich="yes">我方占领</OurCaptureChannel>
+		<EnemyCaptureChannel rich="yes">敌方占领</EnemyCaptureChannel>
+		<NeutralCaptureChannel rich="yes">中立</NeutralCaptureChannel>
+		<CaptureLevelUp rich="yes">占领效果升级</CaptureLevelUp>
+
+		<EventEnemyWave rich="yes">[c=#FF6F00FF]敌方舰队达到战场[/c]</EventEnemyWave>
+		<EventBoss rich="yes">[c=#FF6F00FF]敌方超级战舰达到战场!![/c]</EventBoss>
+		<EventMyMerchantDead rich="yes">[c=#FF6F00FF]运输舰被击毁[/c]</EventMyMerchantDead>
+
+		<EventMyWave rich="yes">[c=#00FFFFFF]我方增援舰队达到战场[/c]</EventMyWave>
+		<SkillBasePointAddStart rich="yes">[c=#00FFFFFF]我方产能点开始加速恢复[/c]</SkillBasePointAddStart>
+		<SkillBasePointAddOver rich="yes">[c=#00FFFFFF]我方产能点加速恢复效果结束[/c]</SkillBasePointAddOver>
+		<EventMyMerchantArrive rich="yes">[c=#00FFFFFF]运输舰成功撤离，获得{0}@BuildPoint@和{1}@Money@[/c]</EventMyMerchantArrive>
+
+		<EventMyMerchantDeadCount rich="yes">被击毁运输舰[n][size=34]{0}[/size]</EventMyMerchantDeadCount>
+
+		<EventBossKillCount rich="yes">击毁超级战舰[n][size=34]{0}/{1}[/size]</EventBossKillCount>
+
+		<ItemBuildPoint rich="yes">[c=#00FFFFFF]+{0}@BuildPoint@[/c]</ItemBuildPoint>
+		<ItemSkillPoint rich="yes">[c=#BA65B0FF]+{0}@SkillPoint@[/c]</ItemSkillPoint>
+		<ItemMoney rich="yes">[c=#FFED00FF]+{0}@Money@[/c]</ItemMoney>
+		<ItemBomb rich="yes">[c=#FF0000FF]爆破[/c]</ItemBomb>
+		<ItemMissiles rich="yes">[c=#FF0000FF]导弹袭击[/c]</ItemMissiles>
+		<ItemDoubleReward rich="yes">[c=#FFED00FF]双倍奖励[/c]</ItemDoubleReward>
+		<MyCastSkillBase rich="yes">[c=#00FFFFFF]我方使用了技能 {0}[/c]</MyCastSkillBase>
+		<EnemyCastSkillBase rich="yes">[c=#FF6F00FF]敌方使用了技能 {0}[/c]</EnemyCastSkillBase>
+
+		<TutorialQuest_Build rich="yes">
+教程任务    
+[size=36]建造战舰:  {0}/5[/size]
+</TutorialQuest_Build>
+		<TutorialQuest_Skill rich="yes">
+教程任务    
+[size=36]施放技能:  {0}/1[/size]
+</TutorialQuest_Skill>
+		<TutorialQuest_Item rich="yes">
+教程任务    
+[size=36]拾取补给:  {0}/1[/size]
+</TutorialQuest_Item>
+		<TutorialQuest_Channel rich="yes">
+教程任务    
+[size=36]占领航道:  {0}/1[/size]
+</TutorialQuest_Channel>
+		<TutorialQuest_Battle rich="yes">
+教程任务    
+摧毁敌方炮塔和母舰
+</TutorialQuest_Battle>
+	</VSBattle>
+</Lang>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Lang>
+	<Default>
+		<Loading>加载中...</Loading>
+		<Shop>太空站</Shop>
+		<Quit>退出</Quit>
+		<ButtonReset>重置</ButtonReset>
+		<ButtonStart>开始</ButtonStart>
+		<ButtonCancel>取消</ButtonCancel>
+		<ButtonReturn>返回</ButtonReturn>
+		<ButtonQuit>退出</ButtonQuit>
+		<ButtonSkip>跳过</ButtonSkip>
+		<ButtonAgain>重来</ButtonAgain>
+		<ButtonBuy>购买</ButtonBuy>
+		<ButtonBuy_Disable>敬请期待</ButtonBuy_Disable>
+		<ButtonPlayVideo>播放</ButtonPlayVideo>
+		<ButtonTechPoint>加点</ButtonTechPoint>
+		<ButtonOK>确认</ButtonOK>
+		<ButtonYes>是</ButtonYes>
+		<ButtonNo>否</ButtonNo>
+		<ButtonOpen>开启</ButtonOpen>
+		<ButtonGiveup>废弃</ButtonGiveup>
+		<ButtonInstall>安装</ButtonInstall>
+		<ButtonPlugout>拔除</ButtonPlugout>
+		<ButtonDriverUp>改进</ButtonDriverUp>
+
+		<ButtonFastBattle>快速战斗</ButtonFastBattle>
+		<ButtonQuitGame>离开游戏</ButtonQuitGame>
+		<ButtonReturnMenu>退出战斗</ButtonReturnMenu>
+		<TextQuitBattle rich="yes">[size=52]暂停[/size][n][n]是否退出战斗?</TextQuitBattle>
+		<TextQuitTutorial rich="yes">[size=52]暂停[/size][n][n]通过简单的教程后，将开始精彩的游戏旅程，不要放弃！</TextQuitTutorial>
+		<TextTutorialOver>[size=48]教程结束[/size]</TextTutorialOver>
+
+		<TapAnywhereToContinue>轻触屏幕继续</TapAnywhereToContinue>
+		<NoFuel>燃料不足</NoFuel>
+
+
+		<Hard>困难</Hard>
+
+		<FleetInfoTitle>战舰编队</FleetInfoTitle>
+		<EnemySide>敌方</EnemySide>
+		<OurSide>我方</OurSide>
+		<Remove>移除</Remove>
+		<Use>出战</Use>
+		<LevelUp>升级</LevelUp>
+		<StarUp>强化</StarUp>
+		<Level>等级</Level>
+		<Point>能耗</Point>
+		<Unlock>解锁</Unlock>
+		<Locked>未解锁</Locked>	
+		<UnitInUse>已出战</UnitInUse>
+		<SkillInUse>已装备</SkillInUse>
+		<TurretInUse>已装备</TurretInUse>
+		<BaseLevel>母舰等级</BaseLevel>
+		<Skill>母舰技能</Skill>
+		<Turret>母舰炮塔</Turret>
+		<SkillStar>等级</SkillStar>
+		<UnlockCast hyper="yes">未解锁[n]费用: {0}</UnlockCast>
+		<LevelUpCast>费用: {0}</LevelUpCast>
+		<StarUpCast>费用: {0}</StarUpCast>
+		<SkillPointCast rich="yes">@SkillPoint@</SkillPointCast>
+		<SkillCastType>类型</SkillCastType>
+
+		<UnitLight>@UnitType.Light@战舰</UnitLight>
+		<UnitMiddle>@UnitType.Middle@战舰</UnitMiddle>
+		<UnitHeavy>@UnitType.Heavy@战舰</UnitHeavy>
+		<Tech>研究所</Tech>
+		<TechReset>重置</TechReset>
+		<TechResetMsg>重置科技将归还所有已使用的科技点，同时需要花费 {0} @Money@，是否确认重置?</TechResetMsg>
+		<TechPoint>科技点</TechPoint>
+		<TechPointLeft>剩余可用</TechPointLeft>
+		<TechBuyPointCast>增加科技点花费: {0}</TechBuyPointCast>
+		<TechPointMax>已到达最大科技点上限</TechPointMax>
+		<TechClickAgainToAdd>再次点击加点</TechClickAgainToAdd>
+
+		<Research>星际舰队</Research>
+		<ResearchCondition>研究条件</ResearchCondition>
+	    <ResearchProgress>达成:</ResearchProgress>
+		<ResearchComplete>升级：{0} @Money@</ResearchComplete>
+		<ResearchReady>已就绪</ResearchReady>
+		
+		<Tech_Classify_LightUnit rich="yes">[size=24]类型[/size][n]@UnitType.Light@战舰科技</Tech_Classify_LightUnit>
+		<Tech_Classify_MiddleUnit rich="yes">[size=24]类型[/size][n]@UnitType.Middle@战舰科技</Tech_Classify_MiddleUnit>
+		<Tech_Classify_HeavyUnit rich="yes">[size=24]类型[/size][n]@UnitType.Heavy@战舰科技</Tech_Classify_HeavyUnit>
+		<Tech_Classify_Common rich="yes">[size=24]类型[/size][n]公共科技</Tech_Classify_Common>
+		<Tech_Front_ClassifyLightUnit rich="yes">先决条件:需[[@UnitType.Light@战舰类型科技]]投入{0}点</Tech_Front_ClassifyLightUnit>
+		<Tech_Front_ClassifyMiddleUnit rich="yes">先决条件:需[[@UnitType.Middle@战舰类型科]]技投入{0}点</Tech_Front_ClassifyMiddleUnit>
+		<Tech_Front_ClassifyHeavyUnit rich="yes">先决条件:需[@UnitType.Heavy@战舰类型科技]]投入{0}点</Tech_Front_ClassifyHeavyUnit>
+		<Tech_Front_ClassifyCommon rich="yes">先决条件:需[[公共类型科技]]投入{0}点</Tech_Front_ClassifyCommon>
+		<Tech_Front_ClassifyAll rich="yes">先决条件:需任意科技投入{0}点</Tech_Front_ClassifyAll>
+		<Tech_Front rich="yes">先决条件:需[[{1}]]投入{0}点</Tech_Front>
+
+		<UnitType_Light rich="yes">[color=#ffff00ff]@UnitType.Light@[/color]
+@UnitType.Light@战舰是迅捷的利剑，机动性强，封敌咽喉。
+对@UnitType.Heavy@战舰造成{0}倍伤害</UnitType_Light>
+		<UnitType_Middle rich="yes">[color=#ffff00ff]@UnitType.Middle@[/color]
+@UnitType.Middle@战舰是森寒的双刃，攻击力强，杀伤范围大。
+对@UnitType.Light@战舰造成{0}倍伤害。</UnitType_Middle>
+		<UnitType_Heavy rich="yes">[color=#ffff00ff]@UnitType.Heavy@[/color]
+@UnitType.Heavy@战舰是牢固的坚盾，装甲厚重，为舰队之重器。
+对@UnitType.Middle@战舰造成{0}倍伤害。</UnitType_Heavy>
+		<UnitType_Super rich="yes">[color=#ffff00ff]@UnitType.Super@[/color][n]不克制其他类型，也不被其他类型克制</UnitType_Super>
+		<GenericType_BaseSkill rich="yes">[color=#ffff00ff]母舰技能[/color][n]母舰消耗辐能施放技能</GenericType_BaseSkill>
+		<GenericType_Turret rich="yes">[color=#ffff00ff]母舰炮塔[/color][n]防卫母舰的最后屏障</GenericType_Turret>
+
+		<ShopFirstBuy>首次购买获得双倍</ShopFirstBuy>
+		<ShopFirstHardBuy rich="yes">开启困难模式后[n]首次购买获得三倍</ShopFirstHardBuy>
+		<ShopDouble rich="yes">[size=36][color=#00FF00FF]双倍![/color][/size]</ShopDouble>
+		<ShopTriple  rich="yes">[size=36][color=#00FF00FF]三倍![/color][/size]</ShopTriple>
+		<ShopBought>已购买</ShopBought>
+		<ShopVideoNoOK>宝箱未就绪</ShopVideoNoOK>
+		<ShopVideoReady rich="yes">[size=36][color=#00FF00FF]就绪![/color][/size]</ShopVideoReady>
+		<ShopClickAgainToBuy>再次点击购买</ShopClickAgainToBuy>
+		<ShopDisableNoPass>通过关卡2-10后解锁</ShopDisableNoPass>
+		<ShopTimeRefresh>{0}后刷新</ShopTimeRefresh>
+		<ShopTimeRefreshAdd>{0}后增加</ShopTimeRefreshAdd>
+		<ShopDisableNoVip>购买[正式版]后解锁</ShopDisableNoVip>
+		<ShopViedoChestLimit></ShopViedoChestLimit>
+
+
+		<WinCondition>获胜条件</WinCondition>
+		<LoseCondition>失败条件</LoseCondition>
+		<LoseText>我方基地被摧毁</LoseText>
+		<LoseText2>{0}分钟内未取得胜利</LoseText2>
+		<EnemyFleetInfoTitle>敌舰编队</EnemyFleetInfoTitle>
+		<BattleInfo_Title>任务 {0}</BattleInfo_Title>
+		<BattleInfo_Title_Hard>任务 {0} (困难)</BattleInfo_Title_Hard>
+		<BattleInfo_Title_Pirate>剿灭海盗</BattleInfo_Title_Pirate>
+
+		<FuelRecover>{0}</FuelRecover>
+
+		<VideoGetFail rich="yes">获取视频资源失败: </VideoGetFail>
+		<PurchaseFail rich="yes">购买失败</PurchaseFail>
+
+		<PurchaseSucc_VIP rich="yes">购买[正式版]成功! [n] 祝你游戏愉快!</PurchaseSucc_VIP>
+    <PurchaseSucc_VIPGIFT1 rich="yes">购买[死神号礼包]成功! [n] 祝你游戏愉快!</PurchaseSucc_VIPGIFT1>
+    <PurchaseSucc_VIPGIFT2 rich="yes">购买[辉光Ⅱ型礼包]成功! [n] 祝你游戏愉快!</PurchaseSucc_VIPGIFT2>
+		<PurchaseSucc_Gold>购买成功!获得 {0} 金币</PurchaseSucc_Gold>
+		<PurchaseSucc_Blueprint>购买成功!获得 {0}</PurchaseSucc_Blueprint>
+
+		<UnlockCostMoney>研发费用</UnlockCostMoney>
+
+		<Get>获取</Get>
+
+		<Settlement>殖民据点</Settlement>
+
+		<VipSkipVideo>购买[正式版]可跳过视频广告</VipSkipVideo>
+
+		<DriverCreating>制造中</DriverCreating>
+		<DriverGiveupMsg_First rich="yes">放弃安装芯片，不会退回@Blueprint@和@Money@。是否确认？</DriverGiveupMsg_First>
+		<DriverGiveupMsg_HQ rich="yes">这可是一颗高品质芯片。[n]是否真的废弃？</DriverGiveupMsg_HQ>
+		<DriverResetMsg rich="yes">拔除芯片后，芯片废弃，芯片槽位可以安装其他芯片。是否拔除？</DriverResetMsg>
+		<DriverSlotResetCast rich="yes">{0}@Money@</DriverSlotResetCast>
+		<DriverSlotLevelUpCast rich="yes">{0}@Blueprint@  {1}@Money@</DriverSlotLevelUpCast>
+		<DriverSlotUnlockCast rich="yes">Lv.{0}[n]{1}@Money@</DriverSlotUnlockCast>
+		<DriverSlotInstallCast rich="yes">{0}@Blueprint@[n]{1}@Money@</DriverSlotInstallCast>
+		<DriverInstall>安装</DriverInstall>
+
+		<SkipChestAnim>跳过动画</SkipChestAnim>
+
+		<Endless>暗黑森林</Endless>
+		<LevelId>第{0}关</LevelId>
+		<PassEasyModeToUnlock>通过第十关后解锁</PassEasyModeToUnlock>
+
+		<NetworkError>网络连接失败</NetworkError>
+	</Default>
+
+	<VSMainMenu>
+		<Mission>剧情模式</Mission>
+		<PlayerVS>对战模式</PlayerVS>
+		<Setting>选项</Setting>
+		<Sign>领取</Sign>
+		<Signed>已领取</Signed>
+		<DailySign>每日补给</DailySign>
+		<DailySignStr>每日补给</DailySignStr>
+		<SignDesc rich="yes">已累计连续领取 [size=56][color=#FFFF00FF]{0}[/color][/size] 次[n]今日补给:
+[size=78][color=#FFFF00FF]{1}[/color][/size][n]@Money@</SignDesc>
+		<SignDesc0 rich="yes">连续领取会提升补给数量，今日补给:
+[size=78][color=#FFFF00FF]{1}[/color][/size][n]@Money@</SignDesc0>
+		<SignDesc_Vip rich="yes">已累计连续领取 [size=56][color=#FFFF00FF]{0}[/color][/size] 次[n]今日补给:
+[color=#FFFF00FF][size=78]{1}[/size]+{2}([正式版]奖励)[/color][n]@Money@</SignDesc_Vip>
+		<SignDesc0_Vip rich="yes">连续领取会提升补给数量，今日补给:
+[color=#FFFF00FF][size=78]{1}[/size]+{2}([正式版]奖励)[/color][n]@Money@</SignDesc0_Vip>
+		<SignRemark>购买[正式版]领取双份补给</SignRemark>
+		<SignVideo rich="yes">观看视频获得双倍补给[n]购买[正式版]可直接领取</SignVideo>
+		<SignVideo_Gotten rich="yes">已领取额外补给 {0} @Money@</SignVideo_Gotten>
+		<SkipTutorial rich="yes">这是您首次启动游戏，是否需要体验游戏教程和剧情.[n]第一次游戏建议不跳过.</SkipTutorial>
+		<Skip rich="yes">跳过所有教程</Skip>
+		<Join rich="yes">进入教程</Join>
+
+		<TutorialStartGame hyper="yes">开始游戏</TutorialStartGame>
+	</VSMainMenu>
+
+	<VSFleet>
+		<BattleInfo>对阵信息</BattleInfo>
+		<DragTipsUnit>拖动到对应槽位以出战</DragTipsUnit>
+		<DragTipsOther>拖动到对应槽位以装备</DragTipsOther>
+
+		<TutorialUnit hyper="yes">战舰</TutorialUnit>
+		<TutorialTurret hyper="yes">炮塔</TutorialTurret>
+		<TutorialBase hyper="yes">母舰</TutorialBase>
+		<TutorialSkill hyper="yes">技能</TutorialSkill>
+		<TutorialBattleInfo hyper="yes">查看敌方舰队信息</TutorialBattleInfo>
+		<TutorialUnitList hyper="yes">战舰列表</TutorialUnitList>
+		<TutorialDragSelect hyper="yes">点击并拖动图标到对应的槽位以选择出战单位或技能</TutorialDragSelect>
+		<TutorialNextPrev hyper="yes">切换单位或技能</TutorialNextPrev>
+		<TutoriaUnitType hyper="yes">战舰类型显示</TutoriaUnitType>
+		<TutorialStart hyper="yes">开始战斗</TutorialStart>
+		<TutorialLevelUp hyper="yes">升级单位</TutorialLevelUp>
+		<TutorialMothershipLevelUp hyper="yes">在这里升级母舰</TutorialMothershipLevelUp>
+	</VSFleet>
+
+	<VSWorldMap>
+		<TutorialMoney rich="yes">@Money@</TutorialMoney>
+		<TutorialFuel rich="yes">@Fuel@</TutorialFuel>
+		<TutorialMenu>指令菜单</TutorialMenu>
+		<TutorialScreen>上下滑动以移动地图</TutorialScreen>
+		<TutorialMission>点击以开始任务</TutorialMission>
+
+		<TutorialResearch>点击进行研发</TutorialResearch>
+
+		<HardMode>困难模式</HardMode>
+		<NormalMode>简单模式</NormalMode>
+		
+
+		<Menu>菜单</Menu>
+		<Fleet>出战配置</Fleet>
+		
+		<EnterHardMode>进入困难模式</EnterHardMode>
+		<HardModeCondition>需简单模式通关</HardModeCondition>
+		<EnterNormalMode>进入简单模式</EnterNormalMode>
+
+		<FastBattleResult_Win rich="yes">[size=46]战斗胜利![/size][n][n]获得@Money@: {0}</FastBattleResult_Win>
+		<FastBattleResult_Lose rich="yes">[size=46]战斗失败![/size]</FastBattleResult_Lose>
+
+		<Rebattle>重新战斗</Rebattle>
+		<Collect>收集</Collect>
+		<Collect2 rich="yes">双倍[n]收集</Collect2>
+		<Collect2Info rich="yes">观看视频获得双倍效果[n]购买[正式版]可直接领取</Collect2Info>
+		<Settlement_TName>殖民据点</Settlement_TName>
+		<Settlement_TProduction>产能(@Money@/小时)</Settlement_TProduction>
+		<Settlement_TAmount>可收集(@Money@)</Settlement_TAmount>
+		<Settlement_Production></Settlement_Production>
+		<Settlement_Amount></Settlement_Amount>
+		<Settlement_AmountMax>(达到上限)</Settlement_AmountMax>
+
+		
+	</VSWorldMap>
+
+	<VSBattle>
+		<TutorialUnit hyper="yes">战舰建造按钮</TutorialUnit>
+		<TutorialBuildPoint hyper="yes">@BuildPoint@指示器</TutorialBuildPoint>
+		<TutorialSkill rich="yes">技能施放按钮</TutorialSkill>
+		<TutorialSkillPoint rich="yes">@SkillPoint@指示器</TutorialSkillPoint>
+		<TutorialItem  rich="yes">补给箱[n]点击拾取</TutorialItem>
+		<TutorialBaseHP  rich="yes">双方母舰生命值</TutorialBaseHP>
+		<TutorialQuit  rich="yes">退出教程</TutorialQuit>
+		<TutorialChl0  rich="yes">左路航道</TutorialChl0>
+		<TutorialChl1  rich="yes">中路航道</TutorialChl1>
+		<TutorialChl2  rich="yes">右路航道</TutorialChl2>
+		<TutorialChlSpeedAdd  rich="yes">占领航道后会获得额外的增长速率</TutorialChlSpeedAdd>
+		<TutorialTurretIcon  rich="yes">炮塔上的图标颜色显示了航道的归属</TutorialTurretIcon>
+		<TutorialBuildDrag  rich="yes">-制造战舰-[n]按下并拖动到指定航道[n]在非航道位置释放[color=#FFFF00FF]取消[/color]建造</TutorialBuildDrag>
+		<TutorialHoldDrag  rich="yes">-批量制造-[n][color=#FFFF00FF]按住不动[/color]，持续一段时间，然后再拖动</TutorialHoldDrag>
+		<TutorialMultiTapDrag  rich="yes">-批量制造-[n][color=#FFFF00FF]多次快速点击[/color]，然后再拖动[n]点击次数决定制造数量</TutorialMultiTapDrag>
+		<TutorialCancelDrag rich="yes">取消[n]拖动到非航道位置</TutorialCancelDrag>
+		<TutorialSkillDrag rich="yes">-施放技能-[n]按下并拖动到指定航道[n]在非航道位置释放[color=#FFFF00FF]取消[/color]施放</TutorialSkillDrag>
+		<Win>胜利</Win>
+		<Lose>失败</Lose>
+		<LoseTips rich="yes">提示[n]提升母舰和飞船等级，并根据敌军阵容进行战舰搭配，就能获取胜利！</LoseTips>
+		<Reward>战利品</Reward>
+		<PassMoney>{0}(任务奖励)</PassMoney>
+		<PassTech>{0}(任务奖励)</PassTech>
+		<VideoMoney>{0}(视频奖励)</VideoMoney>
+		<BattleGet>{0}(战斗获取)</BattleGet>
+		<BattleGet_PirateDouble>{0}(剿灭海盗+50%)</BattleGet_PirateDouble>
+		<BattleGet_Lose>{0}(战斗失败-50%)</BattleGet_Lose>
+		<Next>下一关</Next>
+		<ButtonAgain>重来</ButtonAgain>
+
+		<ViewVideoReward rich="yes">[双倍奖励][n]观看视频开启奖励宝箱，并获得双倍@Money@奖励</ViewVideoReward>
+		<ViewVideoReward_Get rich="yes">已领取</ViewVideoReward_Get>
+		<ViewVideoReward_GetVIP rich="yes">[正式版]已自动领取</ViewVideoReward_GetVIP>
+
+		<PassMoneyStarAdd rich="yes">[color=#FFFF00FF](奖励+50%)[/color]</PassMoneyStarAdd>
+
+		
+	</VSBattle>
+
+	<VSEndless>
+		<PlanetAgent>星球代号{0}</PlanetAgent>
+		<QuitManyTime rich="yes">[size=38][color=#FF0000FF]作弊制裁[/color][/size][n]认输吧，作弊者！(战斗中多次异常退出)</QuitManyTime>
+		<BattleLose rich="yes">[size=38][color=#FF0000FF][失败][/color][/size][n]在漫长的旅途中，"火种"号苦苦支撑，但最终还是湮灭在暗黑森林中……</BattleLose>
+		<EnemyMsg rich="yes">[size=38][color=#00FFFFFF][情报][/color][/size]</EnemyMsg>
+		<EnemyMsg_Boss>敌方超级舰队出没</EnemyMsg_Boss>
+		<EnemyMsg_Force0>敌方实力与我方旗鼓相当</EnemyMsg_Force0>
+		<EnemyMsg_Force>敌方拥有支援部队</EnemyMsg_Force>
+		<EnemyMsg_Force2>敌方兵力非常雄厚</EnemyMsg_Force2>
+		<EnemyMsg_Tower>敌人部署了防御工事</EnemyMsg_Tower>
+		<BattleCounter rich="yes">允许失败次数[n][size=44][color=#FFFF00FF]{0}[/color][/size]</BattleCounter>
+		<BestLevelLabel>最远航行记录</BestLevelLabel>
+	</VSEndless>
+</Lang>

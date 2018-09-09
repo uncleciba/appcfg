@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSDialog>
+	<!-- ################# Battle 教程 ###################-->
+	<Stage name="BattleTutorial" condition="BattleTutorial" oneTimeOnly="false" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+舰长，欢迎来到"火种"号！
+我是"火种"号星际母舰的人工智能。
+战斗前，请允许我向您做一个简单的讲解。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="BaseHP">
+战斗的目标是消灭对方母舰。
+战场分为三个航道，每个航道都有一座母舰炮塔保护，击破母舰炮塔后，才可以攻击母舰。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" positionUp="true" uiShow="Unit">
+双方可以在每个航道上派出战舰。
+战斗中有三种战舰可以制造，制造战舰需要消耗@BuildPoint@。
+制造按钮的右下角显示了@BuildPoint@消耗。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" positionUp="true" >
+我们先使用电力制造5艘普通战舰。
+</d>
+	</Stage>
+
+	<Stage name="BattleTutorial" condition="BattleTutorialSkill" oneTimeOnly="false" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false" positionUp="true">
+干的不错！
+电力用于制造普通战舰，而辐能则用于施放母舰技能或生产强力的核动力战舰。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="Skill" positionUp="true">
+当前技能是由母舰释放“镭射激光”，“镭射激光”可对一条路线上的所有敌人造成伤害。
+和制造战舰一样，点击技能按钮并拖动到指定航道进行施放。</d>
+	</Stage>
+
+	<Stage name="BattleTutorial" condition="BattleTutorialItemStart" oneTimeOnly="false" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false" positionUp="false">
+母舰技能需要大量辐能，需要把握好技能施法的时机。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" positionUp="false">
+除了电力和辐能，战场上另外一种特殊的资源是补给箱。
+在击毁敌方战舰后有一定概率掉落补给箱，补给箱可能带来资源奖励或特殊技能。</d>
+	</Stage>
+
+	<Stage name="BattleTutorial" condition="BattleTutorialItem" oneTimeOnly="false" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="Item" hide="true"></d>
+	</Stage>
+
+	<Stage name="BattleTutorial" condition="BattleTutorialChannel" oneTimeOnly="false" disableSkip="true" >
+		<d avatar="Mate" name="@Name.Mate@" lr="false" >
+如果不去拾取补给箱，补给箱会在战场上保存一段时间，之后被自动拾取。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" >
+接下来，我们需要占领一路航道，而从进一步摧毁敌方母舰炮塔和母舰。
+当某方的战舰在一路航道上取得持续优势后，可占领航道。
+航道上的百分比代表当前的占领进度。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="Channel" positionUp="true">
+航道被占领后，占领方炮塔上图标将被点亮，占领者可以获得@BuildPoint@增长速度加成。
+消灭航道上的敌方炮塔，也会获得@BuildPoint@增长速度加成。
+</d>
+	</Stage>
+	
+	<Stage name="BattleTutorial" condition="BattleTutorialOver" oneTimeOnly="false" disableSkip="true" >
+		<d avatar="Mate" name="@Name.Mate@" lr="false" >
+教程到此结束，接下来等待我们的是真正的敌人！
+</d>
+	</Stage>
+
+	<!-- ################# MainMenu 教程 ###################-->
+	<Stage name="MainMenuTutorial" condition="MainMenuFirst" oneTimeOnly="false" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="StartGame" hide="true"></d>
+	</Stage>
+
+	<!-- ################# WorldMap 教程 ###################-->
+	<Stage name="WorldMap0" condition="WorldMapFirst" oneTimeOnly="true" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+报告舰长，虫族已经攻入地球了！
+刚与其他舰队取得了联系，所有舰队都已放弃救援。
+以敌人的兵力，我们救援地球无异于以卵击石。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+现在唯一的选择就是赶紧撤离。
+舰队配备了能源勘探和收集系统。
+我们可以在拥有资源的星球收集能源，直到寻找到适宜生存的星球。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="Screen">
+当前界面是宇宙地图。
+上下滑动屏幕以移动地图。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="StateBar">
+屏幕上方显示资源数量。
+@Money@是升级舰队的重要资源。
+@Fuel@保障舰队太空旅行的动力。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="Mission" positionUp="true">
+离我们不远处有一股@Alien@的部队，先解决掉他们。
+在地图上点击他们开始战斗。</d>
+	</Stage>
+
+	<!-- ################# MissionPrepare 教程 ###################-->
+	<Stage name="MissionPrepare1" condition="MissionPrepare" conditionParam="1" oneTimeOnly="true" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+每场战斗前，咱们都需要进行战斗准备，比如选择合适出阵战舰、升级战舰等。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+屏幕上方的面板显示了当前舰队的配置。
+点击对应按钮可以查看战舰、母舰炮塔、技能的详细情况。
+</d>
+<d avatar="Mate" name="@Name.Mate@" lr="false" positionUp="true">
+下方面板展示战舰、母舰炮塔和母舰技能的属性。
+其中，大部分图标是都可以点击查看详情的。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" positionUp="true" uiShow="UnitType">
+值得关注的是战舰类型图标。战舰分为三类：小型(S)、中型(M)和重型(H)：
+小型克制重型；
+中型克制小型；
+重型克制中型。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false"  positionUp="true" uiShow="Start">
+目前我们的母舰的等级很低，而且也没有足够的@Money@去提升实力。
+所以，我们看看战舰的特性就可以开始战斗了。
+</d>
+	</Stage>
+
+	<Stage name="MissionPrepare2" condition="MissionPrepare" conditionParam="2" oneTimeOnly="true" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="FleetOper1">
+随着舰队的发展，将有越来越多的战舰和技能可以使用。
+左右箭头切换不同的单位或技能。
+当战舰较多时，使用战舰列表按钮，直接选择需要的战舰更为方便。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="FleetOper2">
+拖动单位或技能到对应的槽位选择其出战。
+注意，已经出战的单位不能再次拖动。
+</d>
+	</Stage>
+
+	<Stage name="MissionPrepare3" condition="MissionPrepare" conditionParam="3" oneTimeOnly="true" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="LevelUp" positionUp="true">
+升级战舰是提升战斗力的重要手段。</d>
+<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="Hits_MothershipLevelUp" positionUp="false">
+但是，升级战舰前我们先要提升母舰的等级，
+因为母舰决定了战舰等级的上限。
+同时，提升母舰等级还能够强化技能和炮塔。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="Tech">
+母舰等级的提升后可以获得新的科技点。
+可以根据战术安排将科技点投入到所需要的科技中。
+点击"科技"按钮打开科技树面板，进行科技加点。
+</d>
+	</Stage>
+
+	<!-- ################# Battle关卡教程 ###################-->
+	<Stage name="BattleBossIn5" condition="BattleBossIn" conditionParam="5" oneTimeOnly="true" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+虫族的超级战舰抵达战场！
+超级战舰是一种极其强力的单位，具有惊人的破坏力。如果让它靠近我方母舰，我们将有灭顶之灾。
+</d>
+	</Stage>
+
+	<Stage name="BattleBossIn1" condition="BattleBossIn" conditionParam="3" oneTimeOnly="true" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+虫族的超级战舰抵达战场！
+超级战舰看似强大，但一定存在弱点。我们要利用它的弱点来击毁它！
+</d>
+	</Stage>
+
+	<!-- ################# WorldMap关卡教程和剧情 ###################-->
+	<Stage name="WorldMap1" condition="WorldMapMissionPass" conditionParam="1" oneTimeOnly="true" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="Pass1Reward">
+战斗很顺利，在开始下一任务前，我们看看"菜单"里的功能。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" positionUp="true" uiShow="OpenMenu">
+点击"菜单"按钮展开菜单选项。
+在"太空站"中，可以进行购买资源，还可以定期领取免费宝箱！
+在"舰队"中，可以查看和调整舰队部署。
+在"研究"中，可以研发新的单位。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="OpenResearch" positionUp="false">
+研发新的战舰需要收集图纸。
+刚刚我们通过开启宝箱获得了足够的新战舰图纸。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="ResearchArrowLight">
+"@Core.UnitAgent.Human_Frigate@"是小型伤害输出战舰，它的导弹攻击非常厉害，且具有减速技能。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="ResearchArrowMiddle">
+"@Core.UnitAgent.Human_Cruiser@"是均衡的中型战舰，各项属性优秀，且具备高成长能力。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="ResearchArrowHeavy">
+"@Core.UnitAgent.Human_Guard@"是大型支援战舰，能够为周围的友军提供护盾防御。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false" uiShow="Research">
+点击战舰或技能图标可以查看详细信息。
+点击"+"按钮进行研发。</d>
+	</Stage>
+
+	<Stage name="PirateAppear" condition="WorldMapPirateAppear" oneTimeOnly="true" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+舰长，前方发现了太空海盗!
+地图上的太空海盗是一种特殊的任务。通过剿灭海盗可以获得@Money@。</d>
+<d avatar="Mate" name="@Name.Mate@" lr="false">
+海盗战舰的等级和我方实力匹配，消灭他们是提升咱们实力的重要手段。
+如果感觉任务比较困难，不妨先刷刷海盗。
+另外，别忘记发挥"抢劫"的特长！</d>
+	</Stage>
+	<!-- ################# 剧情 ################### -->
+	<Stage name="WorldMapMissionPass3" condition="WorldMapMissionPass" conditionParam="3" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+火星在很长一段时间内都被认为不合适人类生存。
+但得益于资源收集和生态自循环科技，我们在火星上建立了一个小规模的殖民据点。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+再次点击地图上的"火星"，或者菜单中的"殖民据点"，可以从殖民据点收集资源。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+火星的资源和条件非常有限，而且银河系已经暴露在虫族的魔爪之下，火星据点难以成为我们的根据地。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+我们接下来的任务是飞出银河系，探索更多的星球。</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionEnter5" condition="WorldMapMissionEnter" conditionParam="5" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+鬼影星位于银河边缘，虽然地质外貌阴森可怖，气候也可能极度寒冷。
+虽然鬼影星不是我们星球，但它拥有大量矿物，我们可以收集大量能源。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+不过，根据其他舰队的情报，鬼影星附近有虫族的超级舰队出没。
+想必我们这次有一场硬仗要打。</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionPass6" condition="WorldMapMissionPass" conditionParam="6" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+仙女座阿尔法是一颗非常美丽的星球，我们在她之上建立一个殖民据点。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+遗憾的是，仙女座阿尔法的大气环境并不理想，必须建立人工穹罩，并依靠生态自循环系统供给氧气。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+我们曾经对仙女座阿尔法抱有很大希望，认为她是最近的宜居家园，而非一个小规模据点。
+但现实却让人失望，我们难以用现在的大气改造技术，将这里改造为可供人类大规模繁衍的新家园。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+错过这个机会，我们不知道何时才能找到下个目标。</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionPass8" condition="WorldMapMissionPass" conditionParam="8" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+巨熊星地表荒凉，缺少水资源和植被覆盖，人类难以在这里大规模定居。
+尽管如此，我们依然建立了殖民据点，以分担人类生存的压力。</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionEnter10" condition="WorldMapMissionEnter" conditionParam="10" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+从虫族战舰的分布来看，岩卯星必定是虫族远征的基地。
+如果能毁掉远征基地，如斩断虫族控制附近星系的双手，让我们行动更加自由。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+基地中必然有大量敌军，我们需要全力以赴。</d>
+	</Stage>
+	
+	<Stage name="WorldMapMissionUnlock12" condition="WorldMapMissionUnlock" conditionParam="12" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+前方发现了大量人类商队，他们正遭受虫族的袭击。我们需要立即赶往资源。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionPass12" condition="WorldMapMissionPass" conditionParam="12" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+从被救的行商那里了解到，地球联盟的其他殖民舰队已经在溪谷星建立了殖民据点。
+但在不久前遭遇了虫族的洗劫，现在星球上残存的部队勉强维系据点的安全。
+看来我们有必要帮助他们一下。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionPass13" condition="WorldMapMissionPass" conditionParam="13" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+这次击退虫族的主力部队应该能换来殖民据点的片刻安宁。
+从目前的情况来看，溪谷星的自然条件和资源不足以支持更大规模的殖民。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+我们从殖民据点获取到了一些补给，继续前行吧！
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock15" condition="WorldMapMissionUnlock" conditionParam="15" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+前方那颗行星是霜语星，周围驻扎着大量虫族部队。
+霜语星上一定有丰富的资源。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+目前我们的能源非常紧缺，如果不能获得补充，我们可能飞不了多远了。
+虽然很危险，但我们必须夺取霜语星。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock17" condition="WorldMapMissionUnlock" conditionParam="17" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+我们即将抵达冬泉星，冬泉星的气候常年类似于地球的冬天，而且冬泉星拥有丰富的水资源。
+有可能是一个适合建立殖民据点的地方。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionPass17" condition="WorldMapMissionPass" conditionParam="17" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+冬泉星没有让我们失望，虽然资源贫瘠、气候恶劣，但我们还是克服困难，建立了一个小型殖民据点。</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+可惜的是，殖民规模有限，我们只能留下了一小部分沿途搭救的平民、技术人员和保护他们的武装力量。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionPass18" condition="WorldMapMissionPass" conditionParam="18" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+我们在地球联盟友军的太空站击退了来犯的虫族。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+友军告诉我们，虫族占领的鲑鱼座欧米伽行星。
+那颗行星上资源丰富，他们计划在其上建立殖民据点。
+鲑鱼座欧米伽行星极有可能成为新家园。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+友军希望我们帮助他们一起夺回鲑鱼座欧米伽行星。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionPass19" condition="WorldMapMissionPass" conditionParam="19" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+经过惨烈的战斗，我们虽然夺回了鲑鱼座欧米伽，但虫族对它进行了报复性的摧毁。
+鲑鱼座欧米伽成为新家园的幻想破灭了。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+但地球联盟已经掌握了天狐星系和鲑鱼星系的主动权，建立多个小型据点。
+为地球联盟与虫族继续对抗打下来基础。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+叛军已经和盟友交上火了，没想到这么快就开始手足相残了。
+</d>
+</Stage>
+
+	<Stage name="WorldMapMissionUnlock20" condition="WorldMapMissionUnlock" conditionParam="20" oneTimeOnly="true">
+<d avatar="Mate" name="@Name.Mate@" lr="false">
+地球联盟准备对虫族的指挥母舰发起一次致命打击，我们随时待命出发。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock23" condition="WorldMapMissionUnlock" conditionParam="23" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+川陀是具有丰富的资源，其战略位置也非常重要，控制范围辐射周围五大星区。
+我们必须把它从叛军的手上夺回来。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock24" condition="WorldMapMissionUnlock" conditionParam="24" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+虽然我们从叛军手上夺回来了川陀，但川陀的战火使初有起色的殖民行动几近夭折。
+川陀已经临近的星球上的殖民据点都遭受了严重的损失。
+</d>
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+我们派出运输舰队，将宝贵的物质运输到其他殖民据点，以供据点重新恢复建设。
+但叛军却试图劫掠我们的运输队。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock25" condition="WorldMapMissionUnlock" conditionParam="25" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+这群该死的虫子似乎嗅到了我们内乱的味道。
+目前有大批虫族战舰正往我们飞来。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock27" condition="WorldMapMissionUnlock" conditionParam="27" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+格雷印记是叛军最后一个重镇，星球周围盘踞着大量叛军主力。
+消灭这行负隅顽抗的动乱分子，必能大振士气。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock28" condition="WorldMapMissionUnlock" conditionParam="28" oneTimeOnly="true">
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+好消息！攻占格雷印记后，我们不仅获取到了大量能源补给，而且大部分叛军放弃反叛，愿意与地球联盟重修旧好。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+但依然有一小股叛军坐守蝰蛇星，不愿妥协。也许给他们一点教训可以让他们举手投降。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock29" condition="WorldMapMissionUnlock" conditionParam="29" oneTimeOnly="true">
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+至此一战，地球联盟叛乱终于被全部平定。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+这次叛乱让地球联盟回到起点，各星球辛苦建立的殖民据点毁于一旦，大部分舰队都遭受毁灭性的重创，甚至全军覆没。
+</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+更重要的是战争带来的过度消耗，使得资源凋零，连维护战舰正常运转的能源都捉襟见肘。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+但无论如何，地球联盟可以再次团结起来共抗外敌……至少表面上一段时间会是这样。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionEnter30" condition="WorldMapMissionEnter" conditionParam="30" oneTimeOnly="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false">
+端点星处于地球联盟所控制势力的最边缘地区，但据说端点星上有一个非常重要的基地，有能力肩负人类复兴的希望。
+我们需要赶走虫族，保住端点星。
+</d>
+<d avatar="Mate" name="@Name.Mate@" lr="false">
+本次的敌方舰队战斗力相当强悍，我们需要十分小心。
+</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock31" condition="WorldMapMissionUnlock" conditionParam="31" oneTimeOnly="true">
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+由于"火种"在与虫族和叛军战斗中的杰出表现，地球联盟给我们安排了新的任务：立即离开端点星，继续前行寻找新的资源。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+地球联盟防区以外危机四伏，去执行这项任务无异于自杀。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+但我们别无选择，只能继续前行，去寻找更多的资源。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+真可悲！由于人类的自己的原因，人类已经错失了太多重建家园的机会，我们亲手将自己推下了悬崖。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+虽然我是一个机器人，但我对能够再找到一个新地球，持悲观态度。</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock33" condition="WorldMapMissionUnlock" conditionParam="33" oneTimeOnly="true">
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+舰长，我们可能正在接近虫族的母星！</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+就算我们不能重建家园，至少也有可能让虫族血债血偿。</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock36" condition="WorldMapMissionUnlock" conditionParam="36" oneTimeOnly="true">
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+原来虫族的生存环境如此糟糕，不急资源匮乏而且地质和气候环境恶劣。
+相比之下，人类的银河系真是天堂。</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionUnlock37" condition="WorldMapMissionUnlock" conditionParam="37" oneTimeOnly="true">
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+我们已经能确认我们正在接近虫族的母星。
+更奇怪的是，在虫族母星的后方，发现了一个能量奇异的虫洞。</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionEnter40" condition="WorldMapMissionEnter" conditionParam="40" oneTimeOnly="true">
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+舰长，舰队准备就绪，战士们士气高昂，随时可以进攻。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+这是最后的决战，敌人虽然很强大，但我们宁可战死，也不苟活。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+以牙还牙，血债血偿！</d>
+	</Stage>
+
+	<Stage name="WorldMapMissionPass40" condition="WorldMapMissionPass" conditionParam="40" oneTimeOnly="true">
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+我们刚刚对那个虫洞的引力场做了分析，科学顾问的报告说，这个虫洞的扭曲空间链接了奇点，可以穿越时空！</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+虽然有风险，但参数控制得当，可以穿越到过去的时空。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+目前人类和虫族两败俱伤。地球联盟朝不保夕，别说重建家园，目前的能源危机依然得不到缓解，而且随时会因为争夺资源再出内乱。</d>
+	<d avatar="Mate" name="@Name.Mate@" lr="false">
+茫茫宇宙中，竟没有我们的立足之地。不如冒险一试，穿越回过去阻止虫族入侵地球。</d>
+	</Stage>
+
+	<Stage name="EndlessStart" condition="EndlessStart" oneTimeOnly="false" disableSkip="true">
+		<d avatar="Mate" name="@Name.Mate@" lr="false" >
+浩瀚无际的宇宙是一个充满危险的暗黑森林，
+"火种"号逃亡的旅行没有尽头。
+森林里的猎人走的越远，打到猎物越肥。
+然而，"火种"号是猎人，还是猎物？
+</d>
+	</Stage>
+
+</VSDialog>
